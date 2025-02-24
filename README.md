@@ -38,8 +38,6 @@ uv pip install -U google-generativeai
 Download repositories into ./03_data_in/code_repos 
 or place pdf files in  ./03_data_in/norms
 
-hello
-
 
 ## List of things to exclude from ontologies and knowledge graphs
 This can be done manually inside sources, e.g. repositories.
