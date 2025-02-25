@@ -14,6 +14,14 @@ docker run -p 6379:6379 -p 3000:3000 -it --rm --name falkordb -v "/$(pwd)/exampl
 
 ```
 
+To build and keep the Container along woth the generated data run:
+
+```sh
+docker run -d --name falkordb -p 6379:6379 -p 3000:3000 -v "/$(pwd)/examples/charging_software/docker_data:/data" falkordb/falkordb:latest  
+```
+
+
+
 ### UV Installation
 
 ```bash

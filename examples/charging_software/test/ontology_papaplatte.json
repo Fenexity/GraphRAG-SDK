@@ -1,0 +1,862 @@
+{
+  "entities": [
+    {
+      "label": "Person",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "birth_date",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "birth_place",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "b_rgerlich",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Channel",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "platform",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "gr_ndung",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "abonnenten",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "aufrufe",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "videos",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "follower",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Podcast",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "originalsprache",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "ver_ffentlichung",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "folgen",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "verlag_label",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "website",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Show",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "TvShow",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Game",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "City",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Country",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Organization",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Book",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "verlag",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "isbn",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Music",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Event",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Award",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "year",
+          "type": "number",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "RealityShow",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "staffel",
+          "type": "number",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Display",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "value",
+          "type": "number",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Location",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Team",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "University",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Gymnasium",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "FieldOfStudy",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "PodcastFestival",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "StreamingService",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Studio",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Verlag",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "PodcastSeries",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "AwardCeremony",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "relations": [
+    {
+      "label": "FOUNDED",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Channel"
+      },
+      "attributes": []
+    },
+    {
+      "label": "MODERATES",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Podcast"
+      },
+      "attributes": []
+    },
+    {
+      "label": "WROTE",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Music"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PARTICIPATED_IN",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "RealityShow"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HOSTED_BY",
+      "source": {
+        "label": "Show"
+      },
+      "target": {
+        "label": "Studio"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_PART_OF",
+      "source": {
+        "label": "Podcast"
+      },
+      "target": {
+        "label": "Organization"
+      },
+      "attributes": []
+    },
+    {
+      "label": "LIVES_IN",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "City"
+      },
+      "attributes": []
+    },
+    {
+      "label": "STUDIED_AT",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "University"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AWARDED",
+      "source": {
+        "label": "Award"
+      },
+      "target": {
+        "label": "Award"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PUBLISHED",
+      "source": {
+        "label": "Verlag"
+      },
+      "target": {
+        "label": "Book"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_FAN_OF",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Music"
+      },
+      "attributes": []
+    },
+    {
+      "label": "LOCATED_IN",
+      "source": {
+        "label": "Gymnasium"
+      },
+      "target": {
+        "label": "City"
+      },
+      "attributes": []
+    },
+    {
+      "label": "COLLABORATED_WITH",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Person"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DISTANCED_FROM",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Person"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ATTENDED",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Gymnasium"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PART_OF",
+      "source": {
+        "label": "Podcast"
+      },
+      "target": {
+        "label": "Organization"
+      },
+      "attributes": []
+    },
+    {
+      "label": "FAN_OF",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Music"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HOSTS",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "PodcastSeries"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PRESENTED_BY",
+      "source": {
+        "label": "AwardCeremony"
+      },
+      "target": {
+        "label": "Organization"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PUBLISHED_BY",
+      "source": {
+        "label": "PodcastSeries"
+      },
+      "target": {
+        "label": "Verlag"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ORIGINATED_IN",
+      "source": {
+        "label": "PodcastSeries"
+      },
+      "target": {
+        "label": "Country"
+      },
+      "attributes": []
+    },
+    {
+      "label": "STREAMED_ON",
+      "source": {
+        "label": "PodcastSeries"
+      },
+      "target": {
+        "label": "StreamingService"
+      },
+      "attributes": []
+    },
+    {
+      "label": "CONTAINS",
+      "source": {
+        "label": "Channel"
+      },
+      "target": {
+        "label": "PodcastSeries"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ATTENDED_BY",
+      "source": {
+        "label": "PodcastFestival"
+      },
+      "target": {
+        "label": "Person"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AWARDED_TO",
+      "source": {
+        "label": "Award"
+      },
+      "target": {
+        "label": "Person"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PLAYS_FOR",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Team"
+      },
+      "attributes": []
+    },
+    {
+      "label": "BASED_IN",
+      "source": {
+        "label": "Team"
+      },
+      "target": {
+        "label": "City"
+      },
+      "attributes": []
+    },
+    {
+      "label": "STUDIES",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "FieldOfStudy"
+      },
+      "attributes": []
+    },
+    {
+      "label": "STREAMS_ON",
+      "source": {
+        "label": "Show"
+      },
+      "target": {
+        "label": "StreamingService"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PRODUCES",
+      "source": {
+        "label": "Studio"
+      },
+      "target": {
+        "label": "PodcastSeries"
+      },
+      "attributes": []
+    },
+    {
+      "label": "COUNTRY_OF",
+      "source": {
+        "label": "City"
+      },
+      "target": {
+        "label": "Country"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SIMILAR_TO",
+      "source": {
+        "label": "Podcast"
+      },
+      "target": {
+        "label": "PodcastSeries"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_GENRE",
+      "source": {
+        "label": "Podcast"
+      },
+      "target": {
+        "label": "FieldOfStudy"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PRODUCED_BY",
+      "source": {
+        "label": "Podcast"
+      },
+      "target": {
+        "label": "Studio"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PLAYS",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Game"
+      },
+      "attributes": []
+    },
+    {
+      "label": "WATCHES",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "TvShow"
+      },
+      "attributes": []
+    },
+    {
+      "label": "READS",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Book"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ATTENDS",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Event"
+      },
+      "attributes": []
+    },
+    {
+      "label": "FEATURED_IN",
+      "source": {
+        "label": "City"
+      },
+      "target": {
+        "label": "Show"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AWARDED_AT",
+      "source": {
+        "label": "Award"
+      },
+      "target": {
+        "label": "Event"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PRESENTS",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "Event"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SPONSORS",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "PodcastFestival"
+      },
+      "attributes": []
+    },
+    {
+      "label": "OWNS",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Channel"
+      },
+      "attributes": []
+    }
+  ]
+}
