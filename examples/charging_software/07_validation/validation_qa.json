@@ -1,0 +1,30 @@
+{
+    "questions": [
+      {
+        "id": "Q1",
+        "question": "What versions of the Open Charge Point Protocol (OCPP) exist?",
+        "expected_answer": ["1.6", "2.0.1", "2.1"]
+      },
+      {
+        "id": "Q2",
+        "question": "What are the latest advancements in bidirectional charging standards?",
+        "expected_answer": "Recent advancements include the implementation of ISO 15118-20 for bidirectional energy flow."
+      },
+      {
+        "id": "Q3",
+        "question": "What OCPP standards are implemented in the Everest project as of January 2025?",
+        "expected_answer": "OCPP 1.6 and 2.0.1."
+      },
+      {
+        "id": "Q4",
+        "question": "What is the CitroneOS Project?",
+        "expected_answer": "Open source charger network software for rapid OCPP 2.0.1 and NEVI compliant EV charge management."
+      },
+      {
+        "id": "Q5",
+        "question": "According to OCPP definitions, what belongs to what? The EVSE to the charging station or the charging station to the EVSE?",
+        "expected_answer": "The EVSE is part of a charging station."
+      }
+    ]
+  }
+  
