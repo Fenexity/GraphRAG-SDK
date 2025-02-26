@@ -1,7 +1,7 @@
 {
   "entities": [
     {
-      "label": "File",
+      "label": "PrimaryKey",
       "attributes": [
         {
           "name": "name",
@@ -10,70 +10,10 @@
           "required": true
         },
         {
-          "name": "type",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "path",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "filename",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "encoding",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Directory",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Table",
-      "attributes": [
-        {
-          "name": "table_name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "primary_keys",
+          "name": "columns",
           "type": "string",
           "unique": false,
           "required": true
-        },
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "comment",
-          "type": "string",
-          "unique": false,
-          "required": false
         }
       ],
       "description": ""
@@ -92,12 +32,6 @@
           "type": "string",
           "unique": false,
           "required": true
-        },
-        {
-          "name": "handlers",
-          "type": "string",
-          "unique": false,
-          "required": true
         }
       ],
       "description": ""
@@ -112,7 +46,7 @@
           "required": true
         },
         {
-          "name": "class",
+          "name": "class_name",
           "type": "string",
           "unique": false,
           "required": true
@@ -127,13 +61,7 @@
           "name": "level",
           "type": "string",
           "unique": false,
-          "required": true
-        },
-        {
-          "name": "formatter",
-          "type": "string",
-          "unique": false,
-          "required": true
+          "required": false
         }
       ],
       "description": ""
@@ -157,55 +85,7 @@
       "description": ""
     },
     {
-      "label": "Log",
-      "attributes": [
-        {
-          "name": "level",
-          "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "handlers",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "License",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Copyright",
-      "attributes": [
-        {
-          "name": "year",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "holder",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Permission",
+      "label": "Configuration",
       "attributes": [
         {
           "name": "type",
@@ -217,118 +97,22 @@
       "description": ""
     },
     {
-      "label": "Software",
+      "label": "StreamHandler",
       "attributes": [
         {
           "name": "name",
           "type": "string",
           "unique": true,
           "required": true
-        },
-        {
-          "name": "version",
-          "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "long_description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "long_description_content_type",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "url",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "keywords",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "license",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "protocol",
-          "type": "string",
-          "unique": false,
-          "required": false
         }
       ],
       "description": ""
     },
     {
-      "label": "Condition",
+      "label": "GenericFormatter",
       "attributes": [
         {
-          "name": "description",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Liability",
-      "attributes": [
-        {
-          "name": "description",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "SqlFile",
-      "attributes": [
-        {
-          "name": "file_name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Constraint",
-      "attributes": [
-        {
-          "name": "constraint_name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "SqlOperation",
-      "attributes": [
-        {
-          "name": "operation_type",
+          "name": "name",
           "type": "string",
           "unique": true,
           "required": true
@@ -367,25 +151,31 @@
       "description": ""
     },
     {
-      "label": "FileFormat",
+      "label": "File",
       "attributes": [
         {
           "name": "name",
           "type": "string",
           "unique": true,
           "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "SqlScript",
-      "attributes": [
+        },
         {
-          "name": "path",
+          "name": "format",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "filename",
           "type": "string",
           "unique": true,
           "required": true
+        },
+        {
+          "name": "encoding",
+          "type": "string",
+          "unique": false,
+          "required": false
         }
       ],
       "description": ""
@@ -403,10 +193,10 @@
       "description": ""
     },
     {
-      "label": "LogLevel",
+      "label": "Script",
       "attributes": [
         {
-          "name": "level",
+          "name": "path",
           "type": "string",
           "unique": true,
           "required": true
@@ -415,73 +205,31 @@
       "description": ""
     },
     {
-      "label": "Parameter",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "ProgrammingLanguage",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Package",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Flake8Config",
+      "label": "Flake8",
       "attributes": [
         {
           "name": "max_line_length",
           "type": "number",
           "unique": false,
-          "required": true
+          "required": false
         },
         {
           "name": "max_complexity",
           "type": "number",
           "unique": false,
-          "required": true
+          "required": false
         },
         {
           "name": "exclude",
           "type": "string",
-          "unique": false,
-          "required": true
+          "unique": true,
+          "required": false
         },
         {
           "name": "show_pep8",
           "type": "boolean",
           "unique": false,
-          "required": true
+          "required": false
         }
       ],
       "description": ""
@@ -493,13 +241,49 @@
           "name": "branch",
           "type": "boolean",
           "unique": false,
-          "required": true
+          "required": false
         },
         {
           "name": "source",
           "type": "string",
           "unique": true,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Software",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
           "required": true
+        },
+        {
+          "name": "version",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "long_description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "long_description_content_type",
+          "type": "string",
+          "unique": false,
+          "required": false
         }
       ],
       "description": ""
@@ -523,7 +307,7 @@
       "description": ""
     },
     {
-      "label": "ConsoleScript",
+      "label": "License",
       "attributes": [
         {
           "name": "name",
@@ -535,7 +319,7 @@
       "description": ""
     },
     {
-      "label": "Requirement",
+      "label": "ProgrammingLanguage",
       "attributes": [
         {
           "name": "name",
@@ -550,60 +334,6 @@
       "label": "Repository",
       "attributes": [
         {
-          "name": "format_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "file_mode",
-          "type": "boolean",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "bare",
-          "type": "boolean",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "log_all_ref_updates",
-          "type": "boolean",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "symlinks",
-          "type": "boolean",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "ignore_case",
-          "type": "boolean",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": false
-        },
-        {
-          "name": "transport_type",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "packed",
-          "type": "boolean",
-          "unique": false,
-          "required": true
-        },
-        {
           "name": "url",
           "type": "string",
           "unique": true,
@@ -613,277 +343,7 @@
       "description": ""
     },
     {
-      "label": "Remote",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "url",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "fetch",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Branch",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "remote",
-          "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "merge",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Reference",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "hash",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "peeled",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "sorted",
-          "type": "boolean",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Script",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "type",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "file_name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "language",
-          "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "purpose",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Hook",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "type",
-          "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "event",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "CommitMessage",
-      "attributes": [
-        {
-          "name": "file_path",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "file_name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "source",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "GitCommand",
-      "attributes": [
-        {
-          "name": "command",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "SignedOffByLine",
-      "attributes": [
-        {
-          "name": "line",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Watchman",
-      "attributes": [
-        {
-          "name": "version",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "communication_protocol",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "GitRepository",
-      "attributes": [
-        {
-          "name": "path",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "url",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "UpdateToken",
-      "attributes": [
-        {
-          "name": "token",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Query",
-      "attributes": [
-        {
-          "name": "expression",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "WorkingDirectory",
-      "attributes": [
-        {
-          "name": "path",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "OperatingSystem",
+      "label": "Package",
       "attributes": [
         {
           "name": "name",
@@ -895,79 +355,7 @@
       "description": ""
     },
     {
-      "label": "WatchmanQuery",
-      "attributes": [
-        {
-          "name": "query_text",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Command",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "HookScript",
-      "attributes": [
-        {
-          "name": "file_name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "FilePath",
-      "attributes": [
-        {
-          "name": "path",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "ShellScript",
-      "attributes": [
-        {
-          "name": "script",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "GitConfig",
+      "label": "ConsoleScript",
       "attributes": [
         {
           "name": "name",
@@ -976,26 +364,8 @@
           "required": true
         },
         {
-          "name": "value",
+          "name": "entry_point",
           "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "GitFile",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "is_ascii",
-          "type": "boolean",
           "unique": false,
           "required": true
         }
@@ -1003,128 +373,14 @@
       "description": ""
     },
     {
-      "label": "Operation",
+      "label": "Table",
       "attributes": [
         {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "GitHook",
-      "attributes": [
-        {
-          "name": "hook_name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Git_Operation",
-      "attributes": [
-        {
-          "name": "operation_type",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Commit",
-      "attributes": [
-        {
-          "name": "hash",
+          "name": "table_name",
           "type": "string",
           "unique": true,
           "required": true
         },
-        {
-          "name": "message",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "id",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Ref",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Range",
-      "attributes": [
-        {
-          "name": "value",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Workflow",
-      "attributes": [
-        {
-          "name": "description",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "MergeStatus",
-      "attributes": [
-        {
-          "name": "status",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "PublishBranch",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "PushOption",
-      "attributes": [
         {
           "name": "name",
           "type": "string",
@@ -1132,26 +388,8 @@
           "required": true
         },
         {
-          "name": "value",
+          "name": "filename",
           "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Action",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "timestamp",
-          "type": "number",
           "unique": false,
           "required": true
         }
@@ -1159,74 +397,20 @@
       "description": ""
     },
     {
-      "label": "SignedOffBy",
+      "label": "Column",
       "attributes": [
         {
-          "name": "signature",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "GitPush",
-      "attributes": [
-        {
-          "name": "event",
+          "name": "column_name",
           "type": "string",
           "unique": true,
           "required": true
         },
         {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "GitBranch",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "ConfigSetting",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "type",
+          "name": "data_type",
           "type": "string",
           "unique": false,
           "required": true
         },
-        {
-          "name": "default_value",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "GitReference",
-      "attributes": [
         {
           "name": "name",
           "type": "string",
@@ -1243,16 +427,28 @@
       "description": ""
     },
     {
-      "label": "Project",
+      "label": "Constraint",
       "attributes": [
         {
-          "name": "description_set",
-          "type": "boolean",
-          "unique": false,
+          "name": "constraint_name",
+          "type": "string",
+          "unique": true,
           "required": true
         },
         {
-          "name": "language",
+          "name": "constraint_type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Index",
+      "attributes": [
+        {
+          "name": "index_name",
           "type": "string",
           "unique": true,
           "required": true
@@ -1261,1507 +457,25 @@
       "description": ""
     },
     {
-      "label": "FilePattern",
+      "label": "ForeignKey",
       "attributes": [
         {
-          "name": "pattern",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Comment",
-      "attributes": [
-        {
-          "name": "text",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "BasisVersion",
-      "attributes": [
-        {
-          "name": "version",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "text",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Einzelanschluss",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "einan_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "anschluss_name",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "anschluss_gruppe",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "leitstellenkennung",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "zub_li_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "zub_li_ri_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "zub_ort_ref_ort",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "zub_onr_typ_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "zub_ort_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "von_ort_ref_ort",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "linienid",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "richtungsid",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "asbid",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "abb_li_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "abb_li_ri_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "abb_ort_ref_ort",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "abb_onr_typ_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "abb_ort_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "nach_ort_ref_ort",
-          "type": "number",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Fahrzeug",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "fzg_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "fzg_typ_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "polkenn",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "unternehmen",
-          "type": "number",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Firmenkalender",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "betriebstag",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "betriebstag_text",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "tagesart_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "FlaechenZone",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "fl_zone_typ_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "fl_zone_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "fl_zone_kuerzel",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "fl_zone_name",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "fl_amtliche_nr",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "FlZoneOrt",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "fl_zone_typ_nr",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "fl_zone_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "onr_typ_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "ort_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "LidVerlauf",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "li_lfd_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "li_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "str_li_var",
+          "name": "foreign_key_name",
           "type": "string",
           "unique": true,
           "required": true
         },
         {
-          "name": "onr_typ_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "ort_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "znr_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "anr_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "einfangbereich",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "li_knoten",
-          "type": "boolean",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "produktiv",
-          "type": "boolean",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "einsteigeverbot",
-          "type": "boolean",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "aussteigeverbot",
-          "type": "boolean",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "innerortsverbot",
-          "type": "boolean",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "bedarfshalt",
-          "type": "boolean",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "MengeBereich",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "bereich_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "str_bereich",
+          "name": "source_table",
           "type": "string",
           "unique": false,
-          "required": false
+          "required": true
         },
         {
-          "name": "bereich_text",
+          "name": "target_table",
           "type": "string",
           "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "MengeFahrtart",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
           "required": true
-        },
-        {
-          "name": "fahrtart_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "str_fahrtart",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "MengeFgr",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "fgr_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "fgr_text",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "MengeFzgTyp",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "fzg_typ_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "fzg_laenge",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "fzg_typ_sitz",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "fzg_typ_steh",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "fzg_typ_text",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "sonder_platz",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "str_fzg_typ",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "MengeOnrTyp",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "onr_typ_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "str_onr_typ",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "onr_typ_text",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "MengeOrtTyp",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "ort_typ_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ort_typ_text",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "MengeTagesart",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "tagesart_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "tagesart_text",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "OrtHztf",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "fgr_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "onr_typ_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ort_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "hp_hzt",
-          "type": "number",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "RecAnr",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "anr_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "anr_text",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "RecFrt",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "frt_fid",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "frt_start",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "li_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "tagesart_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "li_ku_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "fahrtart_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "fgr_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "str_li_var",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "um_uid",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "zugnr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "durchbi_frt_start",
-          "type": "boolean",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "durchbi_frt_ende",
-          "type": "boolean",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "RecFrtHzt",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "frt_fid",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "onr_typ_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ort_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "frt_hzt_zeit",
-          "type": "number",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "RecHp",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "onr_typ_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ort_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "haltepunkt_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "zusatz_info",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "RecLid",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "li_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "str_li_var",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "routen_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "li_ri_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "bereich_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "li_kuerzel",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "lidname",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "routen_art",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "linien_code",
-          "type": "number",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "RecOm",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "onr_typ_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ort_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "orm_kuerzel",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "ormacode",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "orm_text",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "RecOrt",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "onr_typ_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ort_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ort_name",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "ort_ref_ort",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "ort_ref_ort_typ",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "ort_ref_ort_langnr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "ort_ref_ort_kuerzel",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "ort_ref_ort_name",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "zone_wabe_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "ort_pos_laenge",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "ort_pos_breite",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "ort_pos_hoehe",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "ort_richtung",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "hast_nr_lokal",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "hst_nr_national",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "hst_nr_international",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "RecSel",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "bereich_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "onr_typ_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ort_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "sel_ziel",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "sel_ziel_typ",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "sel_laenge",
-          "type": "number",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "RecSelZp",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "bereich_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "onr_typ_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ort_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "sel_ziel",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "sel_ziel_typ",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "zp_onr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "zp_typ",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "sel_zp_laenge",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "zp_lfd_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "RecUeb",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "bereich_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "onr_typ_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ort_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ueb_ziel_typ",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ueb_ziel",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ueb_laenge",
-          "type": "number",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "RecUmlauf",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "tagesart_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "um_uid",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "anf_ort",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "anf_onr_typ",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "end_ort",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "end_onr_typ",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "fzg_typ_nr",
-          "type": "number",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "RecUms",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "einan_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "tagesart_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ums_beginn",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ums_ende",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ums_min",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "ums_max",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "max_verz_man",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "max_verz_auto",
-          "type": "number",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "RecZnr",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "znr_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "faherekurztext",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "seitentext",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "znr_text",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "znr_code",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "SelFztFeld",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "bereich_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "fgr_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "onr_typ_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ort_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "sel_ziel",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "sel_ziel_typ",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "sel_fzt",
-          "type": "number",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "UebFzt",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "bereich_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "fgr_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "onr_typ_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ort_nr",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ueb_ziel_typ",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ueb_ziel",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "ueb_fahrzeit",
-          "type": "number",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "ZulVerkehrsbetrieb",
-      "attributes": [
-        {
-          "name": "basis_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "unternehmen",
-          "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "abk_unternehmen",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "betriebsgebiet_bez",
-          "type": "string",
-          "unique": false,
-          "required": false
         }
       ],
       "description": ""
@@ -2778,9 +492,15 @@
         {
           "name": "schema",
           "type": "string",
-          "unique": false,
+          "unique": true,
           "required": true
-        },
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Metadata",
+      "attributes": [
         {
           "name": "name",
           "type": "string",
@@ -2791,43 +511,67 @@
       "description": ""
     },
     {
-      "label": "Column",
+      "label": "Connection",
       "attributes": [
         {
           "name": "name",
           "type": "string",
           "unique": true,
           "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Reader",
+      "attributes": [
+        {
+          "name": "delimiter",
+          "type": "string",
+          "unique": false,
+          "required": true
         },
         {
-          "name": "type",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Record",
-      "attributes": [
-        {
-          "name": "type",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Ingestion",
-      "attributes": [
-        {
-          "name": "append",
+          "name": "skipinitialspace",
           "type": "boolean",
           "unique": false,
           "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Dictionary",
+      "attributes": [
+        {
+          "name": "key",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Argument",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
         }
       ],
       "description": ""
@@ -2835,17 +579,27 @@
   ],
   "relations": [
     {
-      "label": "CONTAINS",
+      "label": "HAS_PRIMARY_KEY",
       "source": {
-        "label": "Directory"
+        "label": "Configuration"
       },
       "target": {
-        "label": "File"
+        "label": "PrimaryKey"
       },
       "attributes": []
     },
     {
-      "label": "USES",
+      "label": "HAS_LOGGER",
+      "source": {
+        "label": "Configuration"
+      },
+      "target": {
+        "label": "Logger"
+      },
+      "attributes": []
+    },
+    {
+      "label": "USES_HANDLER",
       "source": {
         "label": "Logger"
       },
@@ -2855,7 +609,7 @@
       "attributes": []
     },
     {
-      "label": "HAS_FORMATTER",
+      "label": "USES_FORMATTER",
       "source": {
         "label": "Handler"
       },
@@ -2865,109 +619,42 @@
       "attributes": []
     },
     {
-      "label": "DEFINES",
+      "label": "IS_HANDLER",
       "source": {
-        "label": "Log"
+        "label": "Handler"
       },
       "target": {
-        "label": "Logger"
+        "label": "StreamHandler"
       },
       "attributes": []
     },
     {
-      "label": "HAS_PRIMARY_KEY",
+      "label": "IS_FORMATTER",
       "source": {
-        "label": "Table"
+        "label": "Formatter"
       },
       "target": {
-        "label": "Table"
-      },
-      "attributes": [
-        {
-          "name": "primary_key_name",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ]
-    },
-    {
-      "label": "HAS_COPYRIGHT",
-      "source": {
-        "label": "Software"
-      },
-      "target": {
-        "label": "Copyright"
+        "label": "GenericFormatter"
       },
       "attributes": []
     },
     {
-      "label": "HAS_LICENSE",
-      "source": {
-        "label": "Software"
-      },
-      "target": {
-        "label": "License"
-      },
-      "attributes": []
-    },
-    {
-      "label": "GRANTS_PERMISSION",
-      "source": {
-        "label": "License"
-      },
-      "target": {
-        "label": "Permission"
-      },
-      "attributes": []
-    },
-    {
-      "label": "SUBJECT_TO_CONDITION",
-      "source": {
-        "label": "Permission"
-      },
-      "target": {
-        "label": "Condition"
-      },
-      "attributes": []
-    },
-    {
-      "label": "INCLUDES_LIABILITY",
-      "source": {
-        "label": "License"
-      },
-      "target": {
-        "label": "Liability"
-      },
-      "attributes": []
-    },
-    {
-      "label": "INCLUDES",
-      "source": {
-        "label": "SqlFile"
-      },
-      "target": {
-        "label": "SqlFile"
-      },
-      "attributes": []
-    },
-    {
-      "label": "APPLIES",
-      "source": {
-        "label": "SqlOperation"
-      },
-      "target": {
-        "label": "Constraint"
-      },
-      "attributes": []
-    },
-    {
-      "label": "WRITES_TO",
+      "label": "USES",
       "source": {
         "label": "Tool"
       },
       "target": {
         "label": "Database"
+      },
+      "attributes": []
+    },
+    {
+      "label": "READS_DATA_FROM",
+      "source": {
+        "label": "Tool"
+      },
+      "target": {
+        "label": "File"
       },
       "attributes": []
     },
@@ -2982,49 +669,59 @@
       "attributes": []
     },
     {
-      "label": "APPENDS_TO",
+      "label": "APPLIES",
       "source": {
         "label": "Tool"
       },
       "target": {
-        "label": "Schema"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CONTROLS",
-      "source": {
-        "label": "Tool"
-      },
-      "target": {
-        "label": "LogLevel"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS",
-      "source": {
-        "label": "Tool"
-      },
-      "target": {
-        "label": "Parameter"
+        "label": "Script"
       },
       "attributes": [
         {
-          "name": "condition",
-          "type": "string",
+          "name": "on_success",
+          "type": "boolean",
           "unique": false,
-          "required": true
+          "required": false
         }
       ]
     },
     {
-      "label": "WRITTEN_IN",
+      "label": "AUTHORED",
+      "source": {
+        "label": "Software"
+      },
+      "target": {
+        "label": "Person"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_LICENSE",
+      "source": {
+        "label": "Software"
+      },
+      "target": {
+        "label": "License"
+      },
+      "attributes": []
+    },
+    {
+      "label": "USES_LANGUAGE",
       "source": {
         "label": "Software"
       },
       "target": {
         "label": "ProgrammingLanguage"
+      },
+      "attributes": []
+    },
+    {
+      "label": "LOCATED_IN",
+      "source": {
+        "label": "Software"
+      },
+      "target": {
+        "label": "Repository"
       },
       "attributes": []
     },
@@ -3039,37 +736,7 @@
       "attributes": []
     },
     {
-      "label": "AUTHOR",
-      "source": {
-        "label": "Software"
-      },
-      "target": {
-        "label": "Person"
-      },
-      "attributes": []
-    },
-    {
-      "label": "INCLUDES_PACKAGE",
-      "source": {
-        "label": "Software"
-      },
-      "target": {
-        "label": "Package"
-      },
-      "attributes": []
-    },
-    {
-      "label": "REQUIRES",
-      "source": {
-        "label": "Software"
-      },
-      "target": {
-        "label": "Requirement"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_ENTRY_POINT",
+      "label": "PROVIDES",
       "source": {
         "label": "Software"
       },
@@ -3079,768 +746,22 @@
       "attributes": []
     },
     {
-      "label": "HAS_REMOTE",
+      "label": "READS",
       "source": {
-        "label": "Repository"
-      },
-      "target": {
-        "label": "Remote"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_BRANCH",
-      "source": {
-        "label": "Repository"
-      },
-      "target": {
-        "label": "Branch"
-      },
-      "attributes": []
-    },
-    {
-      "label": "REFERS_TO",
-      "source": {
-        "label": "Reference"
-      },
-      "target": {
-        "label": "Branch"
-      },
-      "attributes": []
-    },
-    {
-      "label": "LOCATED_AT",
-      "source": {
-        "label": "Reference"
-      },
-      "target": {
-        "label": "Remote"
-      },
-      "attributes": [
-        {
-          "name": "location",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ]
-    },
-    {
-      "label": "EXECUTES",
-      "source": {
-        "label": "Hook"
-      },
-      "target": {
-        "label": "Script"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CHECKS",
-      "source": {
-        "label": "Hook"
-      },
-      "target": {
-        "label": "CommitMessage"
-      },
-      "attributes": [
-        {
-          "name": "check_type",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ]
-    },
-    {
-      "label": "DUPLICATE",
-      "source": {
-        "label": "SignedOffByLine"
-      },
-      "target": {
-        "label": "SignedOffByLine"
-      },
-      "attributes": [
-        {
-          "name": "is_duplicate",
-          "type": "boolean",
-          "unique": false,
-          "required": true
-        }
-      ]
-    },
-    {
-      "label": "MONITORS",
-      "source": {
-        "label": "Watchman"
-      },
-      "target": {
-        "label": "GitRepository"
-      },
-      "attributes": []
-    },
-    {
-      "label": "MODIFIED",
-      "source": {
-        "label": "File"
-      },
-      "target": {
-        "label": "UpdateToken"
-      },
-      "attributes": []
-    },
-    {
-      "label": "LOCATED_IN",
-      "source": {
-        "label": "GitRepository"
-      },
-      "target": {
-        "label": "WorkingDirectory"
-      },
-      "attributes": []
-    },
-    {
-      "label": "SUPPORTS",
-      "source": {
-        "label": "OperatingSystem"
-      },
-      "target": {
-        "label": "WorkingDirectory"
-      },
-      "attributes": []
-    },
-    {
-      "label": "PERFORMS",
-      "source": {
-        "label": "Watchman"
-      },
-      "target": {
-        "label": "WatchmanQuery"
-      },
-      "attributes": []
-    },
-    {
-      "label": "UPDATES",
-      "source": {
-        "label": "Hook"
-      },
-      "target": {
-        "label": "Repository"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CONFIGURES",
-      "source": {
-        "label": "HookScript"
-      },
-      "target": {
-        "label": "GitConfig"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CALLED_BY",
-      "source": {
-        "label": "Script"
-      },
-      "target": {
-        "label": "GitHook"
-      },
-      "attributes": [
-        {
-          "name": "event",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ]
-    },
-    {
-      "label": "HAS_COMMIT",
-      "source": {
-        "label": "Git_Operation"
-      },
-      "target": {
-        "label": "Commit"
-      },
-      "attributes": []
-    },
-    {
-      "label": "PUSHED_TO",
-      "source": {
-        "label": "Git_Operation"
-      },
-      "target": {
-        "label": "Remote"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_RANGE",
-      "source": {
-        "label": "Git_Operation"
-      },
-      "target": {
-        "label": "Range"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_REF",
-      "source": {
-        "label": "Git_Operation"
-      },
-      "target": {
-        "label": "Ref"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_LOCAL_REF",
-      "source": {
-        "label": "Commit"
-      },
-      "target": {
-        "label": "Ref"
-      },
-      "attributes": [
-        {
-          "name": "type",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ]
-    },
-    {
-      "label": "HAS_REMOTE_REF",
-      "source": {
-        "label": "Commit"
-      },
-      "target": {
-        "label": "Ref"
-      },
-      "attributes": [
-        {
-          "name": "type",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ]
-    },
-    {
-      "label": "FORKED_FROM",
-      "source": {
-        "label": "Branch"
-      },
-      "target": {
-        "label": "Branch"
-      },
-      "attributes": []
-    },
-    {
-      "label": "MERGED_TO",
-      "source": {
-        "label": "Branch"
-      },
-      "target": {
-        "label": "Branch"
-      },
-      "attributes": []
-    },
-    {
-      "label": "APPLIES_TO",
-      "source": {
-        "label": "Workflow"
-      },
-      "target": {
-        "label": "Branch"
-      },
-      "attributes": []
-    },
-    {
-      "label": "DETERMINES",
-      "source": {
-        "label": "GitCommand"
-      },
-      "target": {
-        "label": "MergeStatus"
-      },
-      "attributes": []
-    },
-    {
-      "label": "PUBLISH_BRANCH",
-      "source": {
-        "label": "Branch"
-      },
-      "target": {
-        "label": "PublishBranch"
-      },
-      "attributes": []
-    },
-    {
-      "label": "RELATED_TO",
-      "source": {
-        "label": "Commit"
-      },
-      "target": {
-        "label": "Branch"
-      },
-      "attributes": []
-    },
-    {
-      "label": "TRIGGERED_BY",
-      "source": {
-        "label": "Action"
-      },
-      "target": {
-        "label": "PushOption"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_ACTION",
-      "source": {
-        "label": "Script"
-      },
-      "target": {
-        "label": "Action"
-      },
-      "attributes": []
-    },
-    {
-      "label": "MODIFIES",
-      "source": {
-        "label": "Script"
-      },
-      "target": {
-        "label": "CommitMessage"
-      },
-      "attributes": []
-    },
-    {
-      "label": "ADDS",
-      "source": {
-        "label": "Script"
-      },
-      "target": {
-        "label": "SignedOffBy"
-      },
-      "attributes": []
-    },
-    {
-      "label": "TRIGGERS",
-      "source": {
-        "label": "GitPush"
-      },
-      "target": {
-        "label": "HookScript"
-      },
-      "attributes": []
-    },
-    {
-      "label": "UPDATED_TO",
-      "source": {
-        "label": "GitBranch"
-      },
-      "target": {
-        "label": "Commit"
-      },
-      "attributes": []
-    },
-    {
-      "label": "AFFECTS",
-      "source": {
-        "label": "GitPush"
-      },
-      "target": {
-        "label": "GitRepository"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_DESCRIPTION",
-      "source": {
-        "label": "Project"
-      },
-      "target": {
-        "label": "HookScript"
-      },
-      "attributes": []
-    },
-    {
-      "label": "PROJECT_DESCRIPTION_FILE",
-      "source": {
-        "label": "Project"
-      },
-      "target": {
-        "label": "ConfigSetting"
-      },
-      "attributes": []
-    },
-    {
-      "label": "EXCLUDES",
-      "source": {
-        "label": "GitCommand"
-      },
-      "target": {
-        "label": "FilePattern"
-      },
-      "attributes": []
-    },
-    {
-      "label": "DEVELOPED",
-      "source": {
-        "label": "Person"
-      },
-      "target": {
         "label": "Software"
       },
-      "attributes": []
-    },
-    {
-      "label": "CLONE",
-      "source": {
-        "label": "Action"
-      },
       "target": {
-        "label": "Repository"
+        "label": "File"
       },
       "attributes": []
     },
     {
-      "label": "PERFORMED_BY",
+      "label": "REQUIRES",
       "source": {
-        "label": "Action"
+        "label": "Software"
       },
       "target": {
-        "label": "Person"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CLONED_FROM",
-      "source": {
-        "label": "Person"
-      },
-      "target": {
-        "label": "GitRepository"
-      },
-      "attributes": [
-        {
-          "name": "timestamp",
-          "type": "number",
-          "unique": true,
-          "required": true
-        }
-      ]
-    },
-    {
-      "label": "POINTS_TO",
-      "source": {
-        "label": "Ref"
-      },
-      "target": {
-        "label": "Branch"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_VERSION",
-      "source": {
-        "label": "BasisVersion"
-      },
-      "target": {
-        "label": "MengeBasisVersionen"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_CONNECTION",
-      "source": {
-        "label": "Einzelanschluss"
-      },
-      "target": {
-        "label": "RecLid"
-      },
-      "attributes": [
-        {
-          "name": "type",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ]
-    },
-    {
-      "label": "HAS_VEHICLE_TYPE",
-      "source": {
-        "label": "Fahrzeug"
-      },
-      "target": {
-        "label": "MengeFzgTyp"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_COMPANY",
-      "source": {
-        "label": "Fahrzeug"
-      },
-      "target": {
-        "label": "ZulVerkehrsbetrieb"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_DAY",
-      "source": {
-        "label": "Firmenkalender"
-      },
-      "target": {
-        "label": "MengeTagesart"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_ZONE",
-      "source": {
-        "label": "FlZoneOrt"
-      },
-      "target": {
-        "label": "FlaechenZone"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_LOCATION",
-      "source": {
-        "label": "FlZoneOrt"
-      },
-      "target": {
-        "label": "RecOrt"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_LINE_INFO",
-      "source": {
-        "label": "LidVerlauf"
-      },
-      "target": {
-        "label": "RecLid"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_LOCATION_INFO",
-      "source": {
-        "label": "LidVerlauf"
-      },
-      "target": {
-        "label": "RecOrt"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_ANR",
-      "source": {
-        "label": "LidVerlauf"
-      },
-      "target": {
-        "label": "RecAnr"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_AREA",
-      "source": {
-        "label": "RecLid"
-      },
-      "target": {
-        "label": "MengeBereich"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_TYPE",
-      "source": {
-        "label": "RecLid"
-      },
-      "target": {
-        "label": "MengeBasisVersionen"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_FAHRTART",
-      "source": {
-        "label": "RecFrt"
-      },
-      "target": {
-        "label": "MengeFahrtart"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_FGR",
-      "source": {
-        "label": "RecFrt"
-      },
-      "target": {
-        "label": "MengeFgr"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_ONR_TYP",
-      "source": {
-        "label": "RecHp"
-      },
-      "target": {
-        "label": "MengeOnrTyp"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_ORT_TYP",
-      "source": {
-        "label": "RecOrt"
-      },
-      "target": {
-        "label": "MengeOrtTyp"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_HALTEPUNKT",
-      "source": {
-        "label": "RecHp"
-      },
-      "target": {
-        "label": "RecOrt"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_ORT",
-      "source": {
-        "label": "RecOm"
-      },
-      "target": {
-        "label": "RecOrt"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_SEL",
-      "source": {
-        "label": "RecSelZp"
-      },
-      "target": {
-        "label": "RecSel"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_UMLAUF",
-      "source": {
-        "label": "RecFrt"
-      },
-      "target": {
-        "label": "RecUmlauf"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_UMS",
-      "source": {
-        "label": "RecUms"
-      },
-      "target": {
-        "label": "Einzelanschluss"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_RECLID",
-      "source": {
-        "label": "RecFrt"
-      },
-      "target": {
-        "label": "RecLid"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_VERKEHRSBETRIEB",
-      "source": {
-        "label": "ZulVerkehrsbetrieb"
-      },
-      "target": {
-        "label": "MengeBasisVersionen"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_ROUTE_INFO",
-      "source": {
-        "label": "RecFrt"
-      },
-      "target": {
-        "label": "RecLid"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_ORT_REF",
-      "source": {
-        "label": "RecOrt"
-      },
-      "target": {
-        "label": "MengeOrtTyp"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_UEB",
-      "source": {
-        "label": "UebFzt"
-      },
-      "target": {
-        "label": "RecUeb"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_FHRZT",
-      "source": {
-        "label": "UebFzt"
-      },
-      "target": {
-        "label": "MengeBasisVersionen"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_DAY_TYPE",
-      "source": {
-        "label": "RecUms"
-      },
-      "target": {
-        "label": "MengeTagesart"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CREATES_TABLE",
-      "source": {
-        "label": "Parser"
-      },
-      "target": {
-        "label": "Table"
+        "label": "File"
       },
       "attributes": []
     },
@@ -3855,27 +776,121 @@
       "attributes": []
     },
     {
-      "label": "READS_FILE",
+      "label": "HAS_CONSTRAINT",
+      "source": {
+        "label": "Table"
+      },
+      "target": {
+        "label": "Constraint"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_INDEX",
+      "source": {
+        "label": "Table"
+      },
+      "target": {
+        "label": "Index"
+      },
+      "attributes": []
+    },
+    {
+      "label": "REFERENCES",
+      "source": {
+        "label": "ForeignKey"
+      },
+      "target": {
+        "label": "Table"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DEFINES",
+      "source": {
+        "label": "Column"
+      },
+      "target": {
+        "label": "ForeignKey"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS",
+      "source": {
+        "label": "Table"
+      },
+      "target": {
+        "label": "Column"
+      },
+      "attributes": []
+    },
+    {
+      "label": "OPENS",
       "source": {
         "label": "Parser"
       },
       "target": {
         "label": "File"
       },
-      "attributes": []
+      "attributes": [
+        {
+          "name": "encoding",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ]
     },
     {
-      "label": "CONTAINS_RECORD",
+      "label": "CREATES_ALL",
       "source": {
-        "label": "File"
+        "label": "Metadata"
       },
       "target": {
-        "label": "Record"
+        "label": "Table"
       },
       "attributes": []
     },
     {
-      "label": "USES_SCHEMA",
+      "label": "EXECUTES",
+      "source": {
+        "label": "Connection"
+      },
+      "target": {
+        "label": "Table"
+      },
+      "attributes": [
+        {
+          "name": "phase",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "CLEANS",
+      "source": {
+        "label": "Parser"
+      },
+      "target": {
+        "label": "Dictionary"
+      },
+      "attributes": []
+    },
+    {
+      "label": "WRITES_TO",
+      "source": {
+        "label": "Tool"
+      },
+      "target": {
+        "label": "Database"
+      },
+      "attributes": []
+    },
+    {
+      "label": "CREATES_TABLES_IN",
       "source": {
         "label": "Tool"
       },
@@ -3885,42 +900,12 @@
       "attributes": []
     },
     {
-      "label": "APPLIES_SCRIPT",
+      "label": "HAS_ARGUMENT",
       "source": {
         "label": "Tool"
       },
       "target": {
-        "label": "SqlScript"
-      },
-      "attributes": []
-    },
-    {
-      "label": "USES_PARSER",
-      "source": {
-        "label": "Tool"
-      },
-      "target": {
-        "label": "Parser"
-      },
-      "attributes": []
-    },
-    {
-      "label": "INGESTS_WITH",
-      "source": {
-        "label": "Tool"
-      },
-      "target": {
-        "label": "Ingestion"
-      },
-      "attributes": []
-    },
-    {
-      "label": "PARSES",
-      "source": {
-        "label": "Parser"
-      },
-      "target": {
-        "label": "File"
+        "label": "Argument"
       },
       "attributes": []
     }

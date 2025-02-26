@@ -1,390 +1,6 @@
 {
   "entities": [
     {
-      "label": "CodeOfConduct",
-      "attributes": [
-        {
-          "name": "version",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "title",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "CommunityLeader",
-      "attributes": [
-        {
-          "name": "responsibility",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Community",
-      "attributes": [
-        {
-          "name": "description",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Enforcement",
-      "attributes": [
-        {
-          "name": "contact_method",
-          "type": "string",
-          "unique": true,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Guideline",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "consequence",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "ContributorCovenant",
-      "attributes": [
-        {
-          "name": "homepage",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "faq",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "translations",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Mozilla",
-      "attributes": [
-        {
-          "name": "code_of_conduct",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Incident",
-      "attributes": [
-        {
-          "name": "description",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Behavior",
-      "attributes": [
-        {
-          "name": "type",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Right",
-      "attributes": [
-        {
-          "name": "description",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Standard",
-      "attributes": [
-        {
-          "name": "description",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Pledge",
-      "attributes": [
-        {
-          "name": "description",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Ban",
-      "attributes": [
-        {
-          "name": "type",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Project",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "language",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "version",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "BugReport",
-      "attributes": [
-        {
-          "name": "details",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "environment",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "reproduce_steps",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "affected_component",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "FeatureRequest",
-      "attributes": [
-        {
-          "name": "title",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "PullRequest",
-      "attributes": [
-        {
-          "name": "procedure",
-          "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Dependency",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "version",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Test",
-      "attributes": [
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "type",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "License",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Copyright",
-      "attributes": [
-        {
-          "name": "holder",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "start_year",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "end_year",
-          "type": "number",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Software",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "id",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "version",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Permission",
-      "attributes": [
-        {
-          "name": "type",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
       "label": "Repository",
       "attributes": [
         {
@@ -398,24 +14,6 @@
           "type": "string",
           "unique": false,
           "required": false
-        },
-        {
-          "name": "format_version",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "description_file",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "url",
-          "type": "string",
-          "unique": true,
-          "required": true
         }
       ],
       "description": ""
@@ -430,25 +28,7 @@
           "required": true
         },
         {
-          "name": "full_name",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
           "name": "version",
-          "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "protocol_name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
           "type": "string",
           "unique": false,
           "required": false
@@ -457,7 +37,7 @@
       "description": ""
     },
     {
-      "label": "Specification",
+      "label": "Library",
       "attributes": [
         {
           "name": "name",
@@ -466,15 +46,9 @@
           "required": true
         },
         {
-          "name": "version",
+          "name": "language",
           "type": "string",
           "unique": false,
-          "required": false
-        },
-        {
-          "name": "file_path",
-          "type": "string",
-          "unique": true,
           "required": true
         }
       ],
@@ -499,6 +73,24 @@
       "description": ""
     },
     {
+      "label": "Specification",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
       "label": "Version",
       "attributes": [
         {
@@ -511,1258 +103,28 @@
       "description": ""
     },
     {
-      "label": "Remote",
+      "label": "ChargingFacility",
       "attributes": [
         {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "url",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Branch",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "remote",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Reference",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Head",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Commit",
-      "attributes": [
-        {
-          "name": "hash",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "message",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "type",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "timestamp",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "timezone",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "commit_hash",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "author_email",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "PackRefs",
-      "attributes": [
-        {
-          "name": "peeled",
-          "type": "boolean",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "fully_peeled",
-          "type": "boolean",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "sorted",
-          "type": "boolean",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "HookScript",
-      "attributes": [
-        {
-          "name": "file_name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "language",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "CommitMessage",
-      "attributes": [
-        {
-          "name": "file_path",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "EmailMessage",
-      "attributes": [
-        {
-          "name": "content",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Line",
-      "attributes": [
-        {
-          "name": "content",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Script",
-      "attributes": [
-        {
-          "name": "language",
-          "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "file_name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Watchman",
-      "attributes": [
-        {
-          "name": "version",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "url",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Git",
-      "attributes": [
-        {
-          "name": "command",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Query",
-      "attributes": [
-        {
-          "name": "expression",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "fields",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "OperatingSystem",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "JSONPackage",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Clock",
-      "attributes": [
-        {
-          "name": "id",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "WorkingDirectory",
-      "attributes": [
-        {
-          "name": "path",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Hook",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "version",
+          "name": "power",
           "type": "number",
           "unique": false,
           "required": true
         },
         {
-          "name": "hook_name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "language",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "File",
-      "attributes": [
-        {
-          "name": "path",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "type",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Error",
-      "attributes": [
-        {
-          "name": "message",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "type",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "additional_info",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Response",
-      "attributes": [
-        {
-          "name": "content",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Process",
-      "attributes": [
-        {
-          "name": "pid",
+          "name": "amperage",
           "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "process_name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
           "unique": false,
           "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "UpdateToken",
-      "attributes": [
+        },
         {
-          "name": "value",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "RootDirectory",
-      "attributes": [
-        {
-          "name": "path",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Interface",
-      "attributes": [
-        {
-          "name": "version",
+          "name": "voltage",
           "type": "number",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "interface_name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Output",
-      "attributes": [
-        {
-          "name": "format",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "FileSystemMonitor",
-      "attributes": [
-        {
-          "name": "type",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Command",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "command_text",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "PerlModule",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Utility",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Directory",
-      "attributes": [
-        {
-          "name": "path",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Configuration",
-      "attributes": [
-        {
-          "name": "setting",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "type",
-          "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "default_value",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "GitRepository",
-      "attributes": [
-        {
-          "name": "path",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Executable",
-      "attributes": [
-        {
-          "name": "path",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "GitConfiguration",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "value",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "FileSystem",
-      "attributes": [
-        {
-          "name": "encoding",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "GitCommand",
-      "attributes": [
-        {
-          "name": "command",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "command_name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "GitDirectory",
-      "attributes": [
-        {
-          "name": "path",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Ref",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "oid",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "ZeroHash",
-      "attributes": [
-        {
-          "name": "value",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Range",
-      "attributes": [
-        {
-          "name": "value",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Operation",
-      "attributes": [
-        {
-          "name": "type",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "GitBranch",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "ConfigurationFile",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "PerlScript",
-      "attributes": [
-        {
-          "name": "purpose",
-          "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "script_path",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "action",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "OperatingSystemCommand",
-      "attributes": [
-        {
-          "name": "command",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "PushOption",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "value",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "GitEnvironmentVariable",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "WorkingTree",
-      "attributes": [
-        {
-          "name": "status",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Index",
-      "attributes": [
-        {
-          "name": "status",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "ConfigurationVariable",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "value",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Tree",
-      "attributes": [
-        {
-          "name": "sha1_hex",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "ShellScript",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "language",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Git_Reference",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "type",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Comment",
-      "attributes": [
-        {
-          "name": "text",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Pattern",
-      "attributes": [
-        {
-          "name": "value",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "GitInfo",
-      "attributes": [
-        {
-          "name": "path",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "ExcludeFile",
-      "attributes": [
-        {
-          "name": "path",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "ExcludePattern",
-      "attributes": [
-        {
-          "name": "value",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Email",
-      "attributes": [
-        {
-          "name": "address",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Person",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "email",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Organization",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Author",
-      "attributes": [
-        {
-          "name": "email",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Origin",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Main",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "ChangeType",
-      "attributes": [
-        {
-          "name": "type",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Contributor",
-      "attributes": [
-        {
-          "name": "github_profile",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "ContributionGuideline",
-      "attributes": [
-        {
-          "name": "url",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "ContributorLicenseAgreement",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Documentation",
-      "attributes": [
-        {
-          "name": "type",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Module",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "fileurl",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "filepath",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "type",
-          "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "version",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Job",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "runs_on",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "GithubAction",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "uses",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Workflow",
-      "attributes": [
-        {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "on_push_branches",
-          "type": "string",
           "unique": false,
           "required": false
         },
         {
-          "name": "on_push_tags",
-          "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "on_pull_request_types",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Setting",
-      "attributes": [
-        {
-          "name": "name",
+          "name": "power_type",
           "type": "string",
           "unique": true,
           "required": true
@@ -1771,76 +133,52 @@
       "description": ""
     },
     {
-      "label": "ProjectModuleManager",
+      "label": "EvseDataRecord",
       "attributes": [
         {
-          "name": "name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Component",
-      "attributes": [
-        {
-          "name": "name",
+          "name": "evseid",
           "type": "string",
           "unique": true,
           "required": true
         },
         {
-          "name": "enabled",
+          "name": "accessibility",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "calibration_law_data_availability",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "dynamic_info_available",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "is_hubject_compatible",
           "type": "boolean",
           "unique": false,
           "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "NewModuleRootManager",
-      "attributes": [
-        {
-          "name": "content_url",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "OrderEntry",
-      "attributes": [
-        {
-          "name": "type",
-          "type": "string",
-          "unique": false,
-          "required": true
         },
         {
-          "name": "fortests",
+          "name": "is_open24_hours",
           "type": "boolean",
           "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "VcsDirectoryMappings",
-      "attributes": [
-        {
-          "name": "directory",
-          "type": "string",
-          "unique": true,
           "required": true
         },
         {
-          "name": "vcs",
+          "name": "renewable_energy",
+          "type": "boolean",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "hotline_phone_number",
           "type": "string",
           "unique": false,
           "required": true
@@ -1885,29 +223,23 @@
       "description": ""
     },
     {
-      "label": "ChargingFacility",
+      "label": "GeoCoordinates",
       "attributes": [
         {
-          "name": "power",
-          "type": "number",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "power_type",
+          "name": "latitude",
           "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "voltage",
-          "type": "number",
           "unique": false,
           "required": false
         },
         {
-          "name": "amperage",
-          "type": "number",
+          "name": "longitude",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "coordinates",
+          "type": "string",
           "unique": false,
           "required": false
         }
@@ -1915,58 +247,201 @@
       "description": ""
     },
     {
-      "label": "EvseDataRecord",
+      "label": "OperatorEvseData",
       "attributes": [
         {
-          "name": "evse_id",
+          "name": "operatorid",
           "type": "string",
           "unique": true,
           "required": true
         },
         {
-          "name": "accessibility",
+          "name": "operator_name",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "EvseStatusRecord",
+      "attributes": [
+        {
+          "name": "evseid",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "evse_status",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "OperatorEvseStatus",
+      "attributes": [
+        {
+          "name": "operatorid",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "operator_name",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ProviderID",
+      "attributes": [
+        {
+          "name": "providerid",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Currency",
+      "attributes": [
+        {
+          "name": "currency_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "PricingProductDataRecord",
+      "attributes": [
+        {
+          "name": "productid",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "product_price_currency",
           "type": "string",
           "unique": false,
           "required": true
         },
         {
-          "name": "dynamic_info_available",
-          "type": "string",
+          "name": "price_per_reference_unit",
+          "type": "number",
           "unique": false,
           "required": true
         },
         {
-          "name": "is_hubject_compatible",
+          "name": "maximum_product_charging_power",
+          "type": "number",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "is_valid24hours",
           "type": "boolean",
           "unique": false,
           "required": true
-        },
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "HubjectSession",
+      "attributes": [
         {
-          "name": "is_open24_hours",
-          "type": "boolean",
-          "unique": false,
+          "name": "sessionid",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Authentication",
+      "attributes": [],
+      "description": ""
+    },
+    {
+      "label": "Identification",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "RemoteIdentification",
+      "attributes": [
+        {
+          "name": "evcoid",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "QRCodeIdentification",
+      "attributes": [
+        {
+          "name": "evcoid",
+          "type": "string",
+          "unique": true,
           "required": true
         },
         {
-          "name": "hotline_phone_number",
+          "name": "hashedpin_value",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "RFIDIdentification",
+      "attributes": [
+        {
+          "name": "uid",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "rfid",
           "type": "string",
           "unique": false,
           "required": true
-        },
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "PlugAndChargeIdentification",
+      "attributes": [
         {
-          "name": "calibration_law_data_availability",
-          "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "renewable_energy",
-          "type": "boolean",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "last_update",
+          "name": "evcoid",
           "type": "string",
           "unique": true,
           "required": true
@@ -1980,7 +455,7 @@
         {
           "name": "lang",
           "type": "string",
-          "unique": false,
+          "unique": true,
           "required": true
         },
         {
@@ -2005,76 +480,58 @@
       "description": ""
     },
     {
-      "label": "OperatorEvseData",
+      "label": "EnergySource",
       "attributes": [
         {
-          "name": "operator_id",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "operator_name",
+          "name": "energy",
           "type": "string",
           "unique": false,
+          "required": false
+        },
+        {
+          "name": "percentage",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "energy_type",
+          "type": "string",
+          "unique": true,
           "required": true
         }
       ],
       "description": ""
     },
     {
-      "label": "PricingProductDataRecord",
+      "label": "EnvironmentalImpact",
       "attributes": [
         {
-          "name": "product_id",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "product_price_currency",
-          "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "reference_unit",
-          "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "price_per_reference_unit",
+          "name": "co2emission",
           "type": "number",
           "unique": false,
-          "required": true
+          "required": false
         },
         {
-          "name": "is_valid24hours",
-          "type": "boolean",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "maximum_product_charging_power",
+          "name": "nuclear_waste",
           "type": "number",
           "unique": false,
-          "required": true
+          "required": false
         }
       ],
       "description": ""
     },
     {
-      "label": "OperatorEvseStatus",
+      "label": "EvseIdProduct",
       "attributes": [
         {
-          "name": "operator_id",
+          "name": "evseid",
           "type": "string",
           "unique": true,
           "required": true
         },
         {
-          "name": "operator_name",
+          "name": "productid",
           "type": "string",
           "unique": false,
           "required": false
@@ -2083,99 +540,10 @@
       "description": ""
     },
     {
-      "label": "EvseStatusRecord",
+      "label": "OperatorID",
       "attributes": [
         {
-          "name": "evse_id",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "evse_status",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Identification",
-      "attributes": [],
-      "description": ""
-    },
-    {
-      "label": "PlugAndChargeIdentification",
-      "attributes": [
-        {
-          "name": "evco_id",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "QRCodeIdentification",
-      "attributes": [
-        {
-          "name": "evco_id",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "RFIDIdentification",
-      "attributes": [
-        {
-          "name": "uid",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "rfid",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "RFIDMifareFamilyIdentification",
-      "attributes": [
-        {
-          "name": "uid",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "RemoteIdentification",
-      "attributes": [
-        {
-          "name": "evco_id",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Session",
-      "attributes": [
-        {
-          "name": "session_id",
+          "name": "operator_id",
           "type": "string",
           "unique": true,
           "required": true
@@ -2197,33 +565,33 @@
           "type": "string",
           "unique": false,
           "required": false
+        },
+        {
+          "name": "additional_info",
+          "type": "string",
+          "unique": false,
+          "required": false
         }
       ],
       "description": ""
     },
     {
-      "label": "ERoamingChargingNotification",
+      "label": "SignedMeteringValue",
       "attributes": [
         {
-          "name": "session_id",
+          "name": "metering_status",
           "type": "string",
           "unique": false,
           "required": false
         },
         {
-          "name": "type",
+          "name": "signed_metering_value",
           "type": "string",
           "unique": false,
           "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Hub",
-      "attributes": [
+        },
         {
-          "name": "hub_operator_id",
+          "name": "signature_value",
           "type": "string",
           "unique": true,
           "required": true
@@ -2235,9 +603,147 @@
       "label": "CalibrationLawVerificationInfo",
       "attributes": [
         {
-          "name": "calibration_law_certificate_id",
+          "name": "calibration_law_certificateid",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "metering_signature_encoding_format",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "metering_signature_url",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "public_key",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "signed_metering_values_verification_instruction",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "EROAMING_AUTHORIZATION_START",
+      "attributes": [
+        {
+          "name": "authorization_status",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "EROAMING_AUTHORIZATION_STOP",
+      "attributes": [
+        {
+          "name": "authorization_status",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ChargingNotificationError",
+      "attributes": [
+        {
+          "name": "error_type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "error_additional_info",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ChargingNotificationProgress",
+      "attributes": [
+        {
+          "name": "charging_duration",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "consumed_energy_progress",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "event_occurred",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ChargingNotificationEnd",
+      "attributes": [
+        {
+          "name": "charging_end",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "charging_start",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "consumed_energy",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "penalty_time_start",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Module",
+      "attributes": [
+        {
+          "name": "name",
           "type": "string",
           "unique": true,
+          "required": true
+        },
+        {
+          "name": "version",
+          "type": "string",
+          "unique": false,
           "required": true
         }
       ],
@@ -2256,10 +762,46 @@
       "description": ""
     },
     {
-      "label": "Hash",
+      "label": "Dependency",
       "attributes": [
         {
-          "name": "value",
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "version",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "IndirectDependency",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "version",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Checksum",
+      "attributes": [
+        {
+          "name": "hash",
           "type": "string",
           "unique": true,
           "required": true
@@ -2268,19 +810,31 @@
           "name": "algorithm",
           "type": "string",
           "unique": false,
-          "required": false
+          "required": true
         }
       ],
       "description": ""
     },
     {
-      "label": "GoMod",
+      "label": "OicpSpecification",
       "attributes": [
         {
-          "name": "path",
+          "name": "version",
           "type": "string",
           "unique": true,
           "required": true
+        },
+        {
+          "name": "file_path",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "url",
+          "type": "string",
+          "unique": false,
+          "required": false
         }
       ],
       "description": ""
@@ -2304,22 +858,46 @@
       "description": ""
     },
     {
-      "label": "Path",
+      "label": "Command",
       "attributes": [
         {
-          "name": "path_name",
+          "name": "command_line",
           "type": "string",
           "unique": true,
           "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
         }
       ],
       "description": ""
     },
     {
-      "label": "Package",
+      "label": "Client",
       "attributes": [
         {
-          "name": "package_name",
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "language",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Path",
+      "attributes": [
+        {
+          "name": "name",
           "type": "string",
           "unique": true,
           "required": true
@@ -2330,6 +908,12 @@
     {
       "label": "HubjectPlatform",
       "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
         {
           "name": "description",
           "type": "string",
@@ -2343,6 +927,12 @@
       "label": "ChargePointOperator",
       "attributes": [
         {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
           "name": "description",
           "type": "string",
           "unique": false,
@@ -2354,6 +944,12 @@
     {
       "label": "ElectricMobilityProvider",
       "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
         {
           "name": "description",
           "type": "string",
@@ -2371,39 +967,57 @@
           "type": "string",
           "unique": true,
           "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
         }
       ],
       "description": ""
     },
     {
-      "label": "Evse",
+      "label": "Service",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "version",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ChargingSession",
+      "attributes": [
+        {
+          "name": "session_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ChargingStation",
       "attributes": [
         {
           "name": "evse_id",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Operator",
-      "attributes": [
-        {
-          "name": "operator_id",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Provider",
-      "attributes": [
-        {
-          "name": "provider_id",
           "type": "string",
           "unique": true,
           "required": true
@@ -2424,60 +1038,6 @@
       "description": ""
     },
     {
-      "label": "ChargingSession",
-      "attributes": [
-        {
-          "name": "start_time",
-          "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "end_time",
-          "type": "string",
-          "unique": false,
-          "required": true
-        },
-        {
-          "name": "energy_consumed",
-          "type": "number",
-          "unique": false,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Evco",
-      "attributes": [
-        {
-          "name": "evco_id",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Service",
-      "attributes": [
-        {
-          "name": "service_name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "version",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
       "label": "PricingProduct",
       "attributes": [
         {
@@ -2487,16 +1047,34 @@
           "required": true
         },
         {
-          "name": "price",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "currency",
+          "name": "description",
           "type": "string",
           "unique": false,
           "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Timezone",
+      "attributes": [
+        {
+          "name": "timezone_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Action",
+      "attributes": [
+        {
+          "name": "action_type",
+          "type": "string",
+          "unique": true,
+          "required": true
         }
       ],
       "description": ""
@@ -2509,9 +1087,21 @@
           "type": "string",
           "unique": true,
           "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Partner",
+      "attributes": [
+        {
+          "name": "partner_id",
+          "type": "string",
+          "unique": true,
+          "required": true
         },
         {
-          "name": "status",
+          "name": "role",
           "type": "string",
           "unique": false,
           "required": true
@@ -2520,34 +1110,10 @@
       "description": ""
     },
     {
-      "label": "ActionType",
+      "label": "EvseData",
       "attributes": [
         {
-          "name": "type",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "ChargingStation",
-      "attributes": [
-        {
-          "name": "charging_station_id",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "AuthenticationMode",
-      "attributes": [
-        {
-          "name": "mode",
+          "name": "evse_id",
           "type": "string",
           "unique": true,
           "required": true
@@ -2568,10 +1134,22 @@
       "description": ""
     },
     {
+      "label": "Plug",
+      "attributes": [
+        {
+          "name": "plug_type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
       "label": "PaymentOption",
       "attributes": [
         {
-          "name": "option",
+          "name": "option_type",
           "type": "string",
           "unique": true,
           "required": true
@@ -2583,7 +1161,7 @@
       "label": "ValueAddedService",
       "attributes": [
         {
-          "name": "service",
+          "name": "service_type",
           "type": "string",
           "unique": true,
           "required": true
@@ -2592,10 +1170,10 @@
       "description": ""
     },
     {
-      "label": "GeoCoordinate",
+      "label": "Operator",
       "attributes": [
         {
-          "name": "coordinates",
+          "name": "operator_id",
           "type": "string",
           "unique": true,
           "required": true
@@ -2604,70 +1182,10 @@
       "description": ""
     },
     {
-      "label": "EvseStatus",
+      "label": "ChargingMode",
       "attributes": [
         {
-          "name": "status",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Timezone",
-      "attributes": [
-        {
-          "name": "timezone_id",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "EnergySource",
-      "attributes": [
-        {
-          "name": "energy",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "percentage",
-          "type": "number",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "EnvironmentalImpact",
-      "attributes": [
-        {
-          "name": "co2_emission",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "nuclear_waste",
-          "type": "number",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "CalibrationLaw",
-      "attributes": [
-        {
-          "name": "data_availability",
+          "name": "mode_type",
           "type": "string",
           "unique": true,
           "required": true
@@ -2689,87 +1207,21 @@
           "type": "string",
           "unique": false,
           "required": true
-        },
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ServiceVersion",
+      "attributes": [
         {
-          "name": "on",
+          "name": "service_name",
           "type": "string",
           "unique": false,
           "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "ChargingMode",
-      "attributes": [
-        {
-          "name": "mode",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "AuthenticationData",
-      "attributes": [
-        {
-          "name": "hash_function",
-          "type": "string",
-          "unique": false,
-          "required": false
         },
         {
-          "name": "hash_value",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "ChargingNotification",
-      "attributes": [
-        {
-          "name": "type",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Plug",
-      "attributes": [
-        {
-          "name": "type",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "LanguageCode",
-      "attributes": [
-        {
-          "name": "code",
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "MeterValue",
-      "attributes": [
-        {
-          "name": "value",
+          "name": "version",
           "type": "number",
           "unique": true,
           "required": true
@@ -2778,10 +1230,10 @@
       "description": ""
     },
     {
-      "label": "SecurityCertificate",
+      "label": "Provider",
       "attributes": [
         {
-          "name": "certificate_id",
+          "name": "provider_id",
           "type": "string",
           "unique": true,
           "required": true
@@ -2790,16 +1242,28 @@
       "description": ""
     },
     {
-      "label": "Device",
+      "label": "ProviderId",
       "attributes": [
         {
-          "name": "device_id",
+          "name": "providerid",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "QrcodeIdentification",
+      "attributes": [
+        {
+          "name": "evcoid",
           "type": "string",
           "unique": true,
           "required": true
         },
         {
-          "name": "manufacturer",
+          "name": "hashedpin_value",
           "type": "string",
           "unique": false,
           "required": false
@@ -2808,16 +1272,16 @@
       "description": ""
     },
     {
-      "label": "Network",
+      "label": "RfidIdentification",
       "attributes": [
         {
-          "name": "network_type",
+          "name": "uid",
           "type": "string",
           "unique": true,
           "required": true
         },
         {
-          "name": "protocol",
+          "name": "rfid",
           "type": "string",
           "unique": false,
           "required": false
@@ -2826,40 +1290,22 @@
       "description": ""
     },
     {
-      "label": "Location",
+      "label": "OperatorId",
       "attributes": [
         {
-          "name": "address",
+          "name": "operator_id",
           "type": "string",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "latitude",
-          "type": "number",
-          "unique": false,
-          "required": false
-        },
-        {
-          "name": "longitude",
-          "type": "number",
-          "unique": false,
-          "required": false
+          "unique": true,
+          "required": true
         }
       ],
       "description": ""
     },
     {
-      "label": "CommunicationParadigm",
+      "label": "EroamingAuthorizationStart",
       "attributes": [
         {
-          "name": "paradigm_type",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
+          "name": "authorization_status",
           "type": "string",
           "unique": false,
           "required": false
@@ -2868,16 +1314,10 @@
       "description": ""
     },
     {
-      "label": "TechnicalStandard",
+      "label": "EroamingAuthorizationStop",
       "attributes": [
         {
-          "name": "standard_name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
+          "name": "authorization_status",
           "type": "string",
           "unique": false,
           "required": false
@@ -2886,326 +1326,46 @@
       "description": ""
     },
     {
-      "label": "DataConsistency",
-      "attributes": [
-        {
-          "name": "data_consistency_type",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "TimeFormat",
-      "attributes": [
-        {
-          "name": "format_type",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "TransparencySoftware",
-      "attributes": [
-        {
-          "name": "software_name",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "ClientCertificate",
-      "attributes": [
-        {
-          "name": "certificate_id",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Release",
-      "attributes": [
-        {
-          "name": "release_date",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
-      "description": ""
-    },
-    {
-      "label": "Endpoint",
-      "attributes": [
-        {
-          "name": "url",
-          "type": "string",
-          "unique": true,
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ],
+      "label": "MeteringValue",
+      "attributes": [],
       "description": ""
     }
   ],
   "relations": [
-    {
-      "label": "RESPONSIBLE_FOR",
-      "source": {
-        "label": "CommunityLeader"
-      },
-      "target": {
-        "label": "Enforcement"
-      },
-      "attributes": []
-    },
-    {
-      "label": "APPLIES_TO",
-      "source": {
-        "label": "CodeOfConduct"
-      },
-      "target": {
-        "label": "Community"
-      },
-      "attributes": []
-    },
-    {
-      "label": "REPORTED_TO",
-      "source": {
-        "label": "Incident"
-      },
-      "target": {
-        "label": "CommunityLeader"
-      },
-      "attributes": []
-    },
-    {
-      "label": "DETERMINES",
-      "source": {
-        "label": "CommunityLeader"
-      },
-      "target": {
-        "label": "Guideline"
-      },
-      "attributes": []
-    },
-    {
-      "label": "ADAPTED_FROM",
-      "source": {
-        "label": "CodeOfConduct"
-      },
-      "target": {
-        "label": "ContributorCovenant"
-      },
-      "attributes": []
-    },
-    {
-      "label": "INSPIRED_BY",
-      "source": {
-        "label": "Guideline"
-      },
-      "target": {
-        "label": "Mozilla"
-      },
-      "attributes": []
-    },
-    {
-      "label": "INCLUDES",
-      "source": {
-        "label": "CodeOfConduct"
-      },
-      "target": {
-        "label": "Standard"
-      },
-      "attributes": []
-    },
-    {
-      "label": "REQUIRES",
-      "source": {
-        "label": "CodeOfConduct"
-      },
-      "target": {
-        "label": "Pledge"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CAN_LEAD_TO",
-      "source": {
-        "label": "Behavior"
-      },
-      "target": {
-        "label": "Ban"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CONTRIBUTING_GUIDE",
-      "source": {
-        "label": "Project"
-      },
-      "target": {
-        "label": "Guideline"
-      },
-      "attributes": []
-    },
-    {
-      "label": "REPORTED",
-      "source": {
-        "label": "Project"
-      },
-      "target": {
-        "label": "BugReport"
-      },
-      "attributes": []
-    },
-    {
-      "label": "REQUESTED",
-      "source": {
-        "label": "Project"
-      },
-      "target": {
-        "label": "FeatureRequest"
-      },
-      "attributes": []
-    },
-    {
-      "label": "SUBMIT",
-      "source": {
-        "label": "Project"
-      },
-      "target": {
-        "label": "PullRequest"
-      },
-      "attributes": []
-    },
-    {
-      "label": "FORKED_FROM",
-      "source": {
-        "label": "PullRequest"
-      },
-      "target": {
-        "label": "Project"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_LICENSE",
-      "source": {
-        "label": "Software"
-      },
-      "target": {
-        "label": "License"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_COPYRIGHT",
-      "source": {
-        "label": "Software"
-      },
-      "target": {
-        "label": "Copyright"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_PERMISSION",
-      "source": {
-        "label": "Software"
-      },
-      "target": {
-        "label": "Permission"
-      },
-      "attributes": []
-    },
     {
       "label": "CONTAINS",
       "source": {
         "label": "Repository"
       },
       "target": {
-        "label": "Client"
+        "label": "Library"
       },
       "attributes": []
     },
     {
       "label": "USES",
       "source": {
-        "label": "Repository"
+        "label": "Library"
       },
       "target": {
         "label": "Protocol"
       },
-      "attributes": [
-        {
-          "name": "purpose",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ]
+      "attributes": []
     },
     {
-      "label": "GENERATED_FROM",
+      "label": "BASED_ON",
       "source": {
-        "label": "Client"
+        "label": "Specification"
       },
       "target": {
-        "label": "Specification"
+        "label": "Protocol"
       },
       "attributes": []
     },
     {
-      "label": "GENERATED_WITH",
+      "label": "GENERATED_BY",
       "source": {
-        "label": "Repository"
+        "label": "Library"
       },
       "target": {
         "label": "Generator"
@@ -3213,9 +1373,19 @@
       "attributes": []
     },
     {
+      "label": "SPECIFIED_BY",
+      "source": {
+        "label": "Version"
+      },
+      "target": {
+        "label": "Specification"
+      },
+      "attributes": []
+    },
+    {
       "label": "VERSION",
       "source": {
-        "label": "Specification"
+        "label": "Protocol"
       },
       "target": {
         "label": "Version"
@@ -3223,728 +1393,9 @@
       "attributes": []
     },
     {
-      "label": "CONFIGURED_WITH",
-      "source": {
-        "label": "Repository"
-      },
-      "target": {
-        "label": "Remote"
-      },
-      "attributes": []
-    },
-    {
-      "label": "POINTS_TO",
-      "source": {
-        "label": "Reference"
-      },
-      "target": {
-        "label": "Head"
-      },
-      "attributes": []
-    },
-    {
-      "label": "LOCATED_IN",
-      "source": {
-        "label": "Head"
-      },
-      "target": {
-        "label": "Branch"
-      },
-      "attributes": []
-    },
-    {
-      "label": "REFERS_TO",
-      "source": {
-        "label": "Commit"
-      },
-      "target": {
-        "label": "Reference"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CHECKS",
-      "source": {
-        "label": "HookScript"
-      },
-      "target": {
-        "label": "CommitMessage"
-      },
-      "attributes": [
-        {
-          "name": "action",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ]
-    },
-    {
-      "label": "TAKEN_FROM",
-      "source": {
-        "label": "CommitMessage"
-      },
-      "target": {
-        "label": "EmailMessage"
-      },
-      "attributes": []
-    },
-    {
-      "label": "EXECUTES",
-      "source": {
-        "label": "HookScript"
-      },
-      "target": {
-        "label": "CommitMessage"
-      },
-      "attributes": []
-    },
-    {
-      "label": "INTEGRATES_WITH",
-      "source": {
-        "label": "Script"
-      },
-      "target": {
-        "label": "Watchman"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CONFIGURES",
-      "source": {
-        "label": "Git"
-      },
-      "target": {
-        "label": "FileSystemMonitor"
-      },
-      "attributes": []
-    },
-    {
-      "label": "COMMUNICATES_WITH",
-      "source": {
-        "label": "Script"
-      },
-      "target": {
-        "label": "Watchman"
-      },
-      "attributes": [
-        {
-          "name": "protocol",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ]
-    },
-    {
-      "label": "LAUNCHES",
-      "source": {
-        "label": "Script"
-      },
-      "target": {
-        "label": "Watchman"
-      },
-      "attributes": []
-    },
-    {
-      "label": "GETS",
-      "source": {
-        "label": "Script"
-      },
-      "target": {
-        "label": "Clock"
-      },
-      "attributes": []
-    },
-    {
-      "label": "IS_WATCHED_BY",
-      "source": {
-        "label": "WorkingDirectory"
-      },
-      "target": {
-        "label": "Watchman"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HANDLES",
-      "source": {
-        "label": "Script"
-      },
-      "target": {
-        "label": "UpdateToken"
-      },
-      "attributes": []
-    },
-    {
-      "label": "QUERIES",
-      "source": {
-        "label": "Watchman"
-      },
-      "target": {
-        "label": "File"
-      },
-      "attributes": [
-        {
-          "name": "reason",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ]
-    },
-    {
-      "label": "DECODES",
-      "source": {
-        "label": "JSONPackage"
-      },
-      "target": {
-        "label": "Response"
-      },
-      "attributes": []
-    },
-    {
-      "label": "MONITORS",
-      "source": {
-        "label": "Watchman"
-      },
-      "target": {
-        "label": "RootDirectory"
-      },
-      "attributes": []
-    },
-    {
-      "label": "USES_QUERY",
-      "source": {
-        "label": "Watchman"
-      },
-      "target": {
-        "label": "Query"
-      },
-      "attributes": []
-    },
-    {
-      "label": "OPERATES_ON",
-      "source": {
-        "label": "Script"
-      },
-      "target": {
-        "label": "OperatingSystem"
-      },
-      "attributes": []
-    },
-    {
-      "label": "INVOKES",
-      "source": {
-        "label": "Script"
-      },
-      "target": {
-        "label": "Command"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CALLS",
-      "source": {
-        "label": "Script"
-      },
-      "target": {
-        "label": "Utility"
-      },
-      "attributes": []
-    },
-    {
-      "label": "DETECTS",
-      "source": {
-        "label": "FileSystemMonitor"
-      },
-      "target": {
-        "label": "File"
-      },
-      "attributes": [
-        {
-          "name": "state",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ]
-    },
-    {
-      "label": "SENDS",
-      "source": {
-        "label": "Process"
-      },
-      "target": {
-        "label": "Query"
-      },
-      "attributes": []
-    },
-    {
-      "label": "RETRIEVES",
-      "source": {
-        "label": "Watchman"
-      },
-      "target": {
-        "label": "File"
-      },
-      "attributes": [
-        {
-          "name": "type",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ]
-    },
-    {
-      "label": "WRITES",
-      "source": {
-        "label": "Script"
-      },
-      "target": {
-        "label": "Output"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HANDLES_ERROR",
-      "source": {
-        "label": "Script"
-      },
-      "target": {
-        "label": "Error"
-      },
-      "attributes": []
-    },
-    {
-      "label": "GENERATES",
-      "source": {
-        "label": "Watchman"
-      },
-      "target": {
-        "label": "Clock"
-      },
-      "attributes": []
-    },
-    {
-      "label": "DEFINES",
-      "source": {
-        "label": "Configuration"
-      },
-      "target": {
-        "label": "FileSystemMonitor"
-      },
-      "attributes": []
-    },
-    {
-      "label": "EXECUTED_BY",
-      "source": {
-        "label": "Command"
-      },
-      "target": {
-        "label": "Script"
-      },
-      "attributes": []
-    },
-    {
-      "label": "UPDATES",
-      "source": {
-        "label": "Script"
-      },
-      "target": {
-        "label": "Hook"
-      },
-      "attributes": []
-    },
-    {
-      "label": "RENAMED_TO",
-      "source": {
-        "label": "Script"
-      },
-      "target": {
-        "label": "Hook"
-      },
-      "attributes": []
-    },
-    {
-      "label": "TRIGGERS",
-      "source": {
-        "label": "GitCommand"
-      },
-      "target": {
-        "label": "HookScript"
-      },
-      "attributes": []
-    },
-    {
-      "label": "PERFORMS",
-      "source": {
-        "label": "HookScript"
-      },
-      "target": {
-        "label": "Commit"
-      },
-      "attributes": []
-    },
-    {
-      "label": "REFERENCES",
-      "source": {
-        "label": "Commit"
-      },
-      "target": {
-        "label": "Ref"
-      },
-      "attributes": []
-    },
-    {
-      "label": "IDENTIFIES",
-      "source": {
-        "label": "Ref"
-      },
-      "target": {
-        "label": "ZeroHash"
-      },
-      "attributes": []
-    },
-    {
-      "label": "SPECIFIES",
-      "source": {
-        "label": "Script"
-      },
-      "target": {
-        "label": "Range"
-      },
-      "attributes": []
-    },
-    {
-      "label": "PUSHES_TO",
-      "source": {
-        "label": "Script"
-      },
-      "target": {
-        "label": "Remote"
-      },
-      "attributes": []
-    },
-    {
-      "label": "MERGED_INTO",
-      "source": {
-        "label": "GitBranch"
-      },
-      "target": {
-        "label": "GitBranch"
-      },
-      "attributes": []
-    },
-    {
-      "label": "COMPARES",
-      "source": {
-        "label": "GitCommand"
-      },
-      "target": {
-        "label": "GitBranch"
-      },
-      "attributes": []
-    },
-    {
-      "label": "MODIFIES",
-      "source": {
-        "label": "HookScript"
-      },
-      "target": {
-        "label": "CommitMessage"
-      },
-      "attributes": [
-        {
-          "name": "purpose",
-          "type": "string",
-          "unique": false,
-          "required": true
-        }
-      ]
-    },
-    {
-      "label": "INVOKED_BY",
-      "source": {
-        "label": "HookScript"
-      },
-      "target": {
-        "label": "GitCommand"
-      },
-      "attributes": []
-    },
-    {
-      "label": "UPDATES_REFERENCE",
-      "source": {
-        "label": "GitCommand"
-      },
-      "target": {
-        "label": "Reference"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CHECKS_HISTORY_OF",
-      "source": {
-        "label": "GitCommand"
-      },
-      "target": {
-        "label": "Tree"
-      },
-      "attributes": []
-    },
-    {
-      "label": "TRANSLATION_OF",
-      "source": {
-        "label": "ShellScript"
-      },
-      "target": {
-        "label": "GitCommand"
-      },
-      "attributes": []
-    },
-    {
-      "label": "LISTS_FILES",
-      "source": {
-        "label": "GitCommand"
-      },
-      "target": {
-        "label": "File"
-      },
-      "attributes": []
-    },
-    {
-      "label": "EXCLUDE_FROM",
-      "source": {
-        "label": "GitCommand"
-      },
-      "target": {
-        "label": "ExcludeFile"
-      },
-      "attributes": []
-    },
-    {
-      "label": "SUGGESTS",
-      "source": {
-        "label": "Comment"
-      },
-      "target": {
-        "label": "ExcludePattern"
-      },
-      "attributes": []
-    },
-    {
-      "label": "AUTHORED",
-      "source": {
-        "label": "Commit"
-      },
-      "target": {
-        "label": "Email"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CLONED_FROM",
-      "source": {
-        "label": "Commit"
-      },
-      "target": {
-        "label": "Repository"
-      },
-      "attributes": []
-    },
-    {
-      "label": "PART_OF",
-      "source": {
-        "label": "Email"
-      },
-      "target": {
-        "label": "Organization"
-      },
-      "attributes": []
-    },
-    {
-      "label": "WORKS_AT",
-      "source": {
-        "label": "Person"
-      },
-      "target": {
-        "label": "Organization"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CLONE_FROM",
-      "source": {
-        "label": "Commit"
-      },
-      "target": {
-        "label": "Repository"
-      },
-      "attributes": []
-    },
-    {
-      "label": "COMMUNICATES_VIA",
-      "source": {
-        "label": "Software"
-      },
-      "target": {
-        "label": "Protocol"
-      },
-      "attributes": []
-    },
-    {
-      "label": "INTRODUCES",
-      "source": {
-        "label": "PullRequest"
-      },
-      "target": {
-        "label": "ChangeType"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_READ",
-      "source": {
-        "label": "Contributor"
-      },
-      "target": {
-        "label": "ContributionGuideline"
-      },
-      "attributes": []
-    },
-    {
-      "label": "SIGNED",
-      "source": {
-        "label": "Contributor"
-      },
-      "target": {
-        "label": "ContributorLicenseAgreement"
-      },
-      "attributes": []
-    },
-    {
-      "label": "PASSES",
-      "source": {
-        "label": "PullRequest"
-      },
-      "target": {
-        "label": "Test"
-      },
-      "attributes": []
-    },
-    {
-      "label": "ADDED",
-      "source": {
-        "label": "PullRequest"
-      },
-      "target": {
-        "label": "Documentation"
-      },
-      "attributes": []
-    },
-    {
-      "label": "VALIDATES",
-      "source": {
-        "label": "Job"
-      },
-      "target": {
-        "label": "Specification"
-      },
-      "attributes": []
-    },
-    {
-      "label": "IGNORE",
-      "source": {
-        "label": "File"
-      },
-      "target": {
-        "label": "Setting"
-      },
-      "attributes": [
-        {
-          "name": "reason",
-          "type": "string",
-          "unique": false,
-          "required": false
-        }
-      ]
-    },
-    {
-      "label": "HAS_MODULE",
-      "source": {
-        "label": "ProjectModuleManager"
-      },
-      "target": {
-        "label": "Module"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS",
-      "source": {
-        "label": "Module"
-      },
-      "target": {
-        "label": "Component"
-      },
-      "attributes": []
-    },
-    {
-      "label": "MAPS",
-      "source": {
-        "label": "Component"
-      },
-      "target": {
-        "label": "VcsDirectoryMappings"
-      },
-      "attributes": []
-    },
-    {
       "label": "LOCATED_AT",
       "source": {
-        "label": "EvseDataRecord"
-      },
-      "target": {
-        "label": "Address"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_NAME",
-      "source": {
-        "label": "EvseDataRecord"
-      },
-      "target": {
-        "label": "InfoText"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_LOCATION_REFERENCE",
-      "source": {
-        "label": "EvseDataRecord"
-      },
-      "target": {
-        "label": "InfoText"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_TIMES",
-      "source": {
-        "label": "EvseDataRecord"
-      },
-      "target": {
-        "label": "OpeningTimes"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_RECORD",
-      "source": {
-        "label": "OperatorEvseData"
+        "label": "ChargingFacility"
       },
       "target": {
         "label": "EvseDataRecord"
@@ -3962,9 +1413,89 @@
       "attributes": []
     },
     {
+      "label": "PRICING_FOR",
+      "source": {
+        "label": "PricingProductDataRecord"
+      },
+      "target": {
+        "label": "ProviderID"
+      },
+      "attributes": []
+    },
+    {
+      "label": "REQUIRES",
+      "source": {
+        "label": "EROAMING_AUTHORIZATION_START"
+      },
+      "target": {
+        "label": "Identification"
+      },
+      "attributes": []
+    },
+    {
+      "label": "REPORTS",
+      "source": {
+        "label": "EROAMING_AUTHORIZATION_START"
+      },
+      "target": {
+        "label": "HubjectSession"
+      },
+      "attributes": []
+    },
+    {
+      "label": "USED_BY",
+      "source": {
+        "label": "ChargingNotificationError"
+      },
+      "target": {
+        "label": "EvseDataRecord"
+      },
+      "attributes": []
+    },
+    {
       "label": "AUTHENTICATED_BY",
       "source": {
-        "label": "ERoamingChargingNotification"
+        "label": "EvseDataRecord"
+      },
+      "target": {
+        "label": "Authentication"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_OPENING_TIMES",
+      "source": {
+        "label": "EvseDataRecord"
+      },
+      "target": {
+        "label": "OpeningTimes"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_ENERGY_SOURCE",
+      "source": {
+        "label": "EvseDataRecord"
+      },
+      "target": {
+        "label": "EnergySource"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_ENVIRONMENTAL_IMPACT",
+      "source": {
+        "label": "EvseDataRecord"
+      },
+      "target": {
+        "label": "EnvironmentalImpact"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ACTS_AS",
+      "source": {
+        "label": "PlugAndChargeIdentification"
       },
       "target": {
         "label": "Identification"
@@ -3972,42 +1503,142 @@
       "attributes": []
     },
     {
-      "label": "USES_SESSION",
+      "label": "AUTHENTICATED_WITH",
       "source": {
-        "label": "ERoamingAuthorizeStart"
+        "label": "Authentication"
       },
       "target": {
-        "label": "Session"
+        "label": "HubjectSession"
       },
       "attributes": []
     },
     {
-      "label": "IDENTIFIED_BY",
+      "label": "HAS",
       "source": {
-        "label": "ERoamingAuthorizeRemoteStart"
+        "label": "EvseDataRecord"
       },
       "target": {
-        "label": "Identification"
+        "label": "ChargingFacility"
       },
       "attributes": []
     },
     {
-      "label": "USES_STATUS_CODE",
+      "label": "FOR_OPERATOR",
       "source": {
-        "label": "ERoamingAcknowledgmen"
+        "label": "EvseDataRecord"
       },
       "target": {
-        "label": "StatusCode"
+        "label": "OperatorEvseData"
       },
       "attributes": []
     },
     {
-      "label": "HAS_VERIFICATION",
+      "label": "REPORTS_STATUS",
       "source": {
-        "label": "ERoamingChargeDetailRecord"
+        "label": "OperatorEvseData"
+      },
+      "target": {
+        "label": "EvseStatusRecord"
+      },
+      "attributes": []
+    },
+    {
+      "label": "USING_PLUG_AND_CHARGE",
+      "source": {
+        "label": "EvseDataRecord"
+      },
+      "target": {
+        "label": "PlugAndChargeIdentification"
+      },
+      "attributes": []
+    },
+    {
+      "label": "USING_QR_CODE",
+      "source": {
+        "label": "EvseDataRecord"
+      },
+      "target": {
+        "label": "QRCodeIdentification"
+      },
+      "attributes": []
+    },
+    {
+      "label": "USING_RFID",
+      "source": {
+        "label": "EvseDataRecord"
+      },
+      "target": {
+        "label": "RFIDIdentification"
+      },
+      "attributes": []
+    },
+    {
+      "label": "USING_REMOTE",
+      "source": {
+        "label": "EvseDataRecord"
+      },
+      "target": {
+        "label": "RemoteIdentification"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AUTHENTICATES",
+      "source": {
+        "label": "Authentication"
+      },
+      "target": {
+        "label": "EvseDataRecord"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PRICING_FOR_EVSE",
+      "source": {
+        "label": "PricingProductDataRecord"
+      },
+      "target": {
+        "label": "EvseDataRecord"
+      },
+      "attributes": []
+    },
+    {
+      "label": "FOR_PRODUCT",
+      "source": {
+        "label": "EvseIdProduct"
+      },
+      "target": {
+        "label": "PricingProductDataRecord"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_CALIBRATION_INFO",
+      "source": {
+        "label": "EvseDataRecord"
       },
       "target": {
         "label": "CalibrationLawVerificationInfo"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_SIGNED_METERING_VALUE",
+      "source": {
+        "label": "EvseDataRecord"
+      },
+      "target": {
+        "label": "SignedMeteringValue"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_INFO",
+      "source": {
+        "label": "EvseDataRecord"
+      },
+      "target": {
+        "label": "InfoText"
       },
       "attributes": []
     },
@@ -4022,132 +1653,62 @@
       "attributes": []
     },
     {
-      "label": "HAS_HASH",
+      "label": "HAS_CHECKSUM",
       "source": {
         "label": "Module"
       },
       "target": {
-        "label": "Hash"
+        "label": "Checksum"
       },
       "attributes": []
     },
     {
-      "label": "USES_GO_MOD",
+      "label": "GO_MOD",
       "source": {
         "label": "Module"
       },
       "target": {
-        "label": "GoMod"
+        "label": "Module"
       },
       "attributes": []
     },
     {
-      "label": "REGENERATES",
+      "label": "GENERATED_FROM",
       "source": {
-        "label": "Command"
+        "label": "Client"
       },
       "target": {
-        "label": "Software"
+        "label": "OicpSpecification"
       },
       "attributes": []
     },
     {
-      "label": "FOR",
+      "label": "LOCATED_IN",
       "source": {
-        "label": "Command"
+        "label": "OicpSpecification"
       },
       "target": {
-        "label": "Package"
+        "label": "Path"
       },
       "attributes": []
     },
     {
-      "label": "OPERATES",
+      "label": "COMMUNICATES_WITH",
       "source": {
         "label": "ChargePointOperator"
       },
       "target": {
-        "label": "ChargingStation"
+        "label": "HubjectPlatform"
       },
       "attributes": []
     },
     {
-      "label": "PROVIDES",
+      "label": "SERVES",
       "source": {
         "label": "ElectricMobilityProvider"
       },
       "target": {
-        "label": "ChargingSession"
-      },
-      "attributes": []
-    },
-    {
-      "label": "OFFERS",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "ValueAddedService"
-      },
-      "attributes": []
-    },
-    {
-      "label": "OPERATES_IN",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "Timezone"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_FACILITY",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "ChargingFacility"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_IMPACT",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "EnvironmentalImpact"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_OPENING_TIME",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "OpeningTime"
-      },
-      "attributes": []
-    },
-    {
-      "label": "SUPPORTS",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "ChargingMode"
-      },
-      "attributes": []
-    },
-    {
-      "label": "EXPERIENCES",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "Error"
+        "label": "ChargePointOperator"
       },
       "attributes": []
     },
@@ -4162,127 +1723,7 @@
       "attributes": []
     },
     {
-      "label": "IS_PART_OF",
-      "source": {
-        "label": "Evse"
-      },
-      "target": {
-        "label": "EvseDataRecord"
-      },
-      "attributes": []
-    },
-    {
-      "label": "RUNS_ON",
-      "source": {
-        "label": "ChargePointOperator"
-      },
-      "target": {
-        "label": "Software"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CONNECTS_VIA",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "Network"
-      },
-      "attributes": []
-    },
-    {
-      "label": "COMPLIES_WITH",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "TechnicalStandard"
-      },
-      "attributes": []
-    },
-    {
-      "label": "ENSURES",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "DataConsistency"
-      },
-      "attributes": []
-    },
-    {
-      "label": "USES_FORMAT",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "TimeFormat"
-      },
-      "attributes": []
-    },
-    {
-      "label": "RELEASED_IN",
-      "source": {
-        "label": "OpenInterChargeProtocol"
-      },
-      "target": {
-        "label": "Release"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_INTERFACE",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "Interface"
-      },
-      "attributes": []
-    },
-    {
-      "label": "USES_PROTOCOL",
-      "source": {
-        "label": "Interface"
-      },
-      "target": {
-        "label": "Protocol"
-      },
-      "attributes": []
-    },
-    {
-      "label": "ACCESSED_VIA",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "Endpoint"
-      },
-      "attributes": []
-    },
-    {
-      "label": "IS_OPERATED_BY",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "ChargePointOperator"
-      },
-      "attributes": []
-    },
-    {
-      "label": "IS_ACCESSIBLE_VIA",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "Accessibility"
-      },
-      "attributes": []
-    },
-    {
-      "label": "ACCEPTS_PAYMENT_VIA",
+      "label": "SUPPORTS",
       "source": {
         "label": "ChargingStation"
       },
@@ -4292,9 +1733,9 @@
       "attributes": []
     },
     {
-      "label": "PROVIDES_SERVICE",
+      "label": "OFFERS",
       "source": {
-        "label": "ChargingStation"
+        "label": "ChargePointOperator"
       },
       "target": {
         "label": "ValueAddedService"
@@ -4302,717 +1743,27 @@
       "attributes": []
     },
     {
-      "label": "PUSHES_DATA_WITH",
+      "label": "OPERATES",
       "source": {
         "label": "ChargePointOperator"
       },
       "target": {
-        "label": "ActionType"
+        "label": "ChargingStation"
       },
       "attributes": []
     },
     {
-      "label": "IS_AUTHENTICATED_BY",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "AuthenticationMode"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CONNECTED_TO",
+      "label": "HAS_FACILITY",
       "source": {
         "label": "ChargingStation"
       },
       "target": {
-        "label": "Network"
+        "label": "ChargingFacility"
       },
       "attributes": []
     },
     {
-      "label": "OFFERS_PRODUCT",
-      "source": {
-        "label": "ChargePointOperator"
-      },
-      "target": {
-        "label": "PricingProduct"
-      },
-      "attributes": []
-    },
-    {
-      "label": "MEASURES_DATA_WITH",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "MeteringSignature"
-      },
-      "attributes": []
-    },
-    {
-      "label": "ASSIGNED_TO",
-      "source": {
-        "label": "Service"
-      },
-      "target": {
-        "label": "Session"
-      },
-      "attributes": []
-    },
-    {
-      "label": "INDICATES_STATUS",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "StatusCode"
-      },
-      "attributes": []
-    },
-    {
-      "label": "TRANSMITS",
-      "source": {
-        "label": "HubjectPlatform"
-      },
-      "target": {
-        "label": "OpenInterChargeProtocol"
-      },
-      "attributes": []
-    },
-    {
-      "label": "OPERATES_WITH",
-      "source": {
-        "label": "ChargePointOperator"
-      },
-      "target": {
-        "label": "HubjectPlatform"
-      },
-      "attributes": []
-    },
-    {
-      "label": "USES_VERSION",
-      "source": {
-        "label": "Service"
-      },
-      "target": {
-        "label": "OpenInterChargeProtocol"
-      },
-      "attributes": []
-    },
-    {
-      "label": "AUTHENTICATES_WITH",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "AuthenticationData"
-      },
-      "attributes": []
-    },
-    {
-      "label": "NOTIFIES",
-      "source": {
-        "label": "ChargePointOperator"
-      },
-      "target": {
-        "label": "ElectricMobilityProvider"
-      },
-      "attributes": []
-    },
-    {
-      "label": "PROVIDES_VIA",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "Plug"
-      },
-      "attributes": []
-    },
-    {
-      "label": "MEASURES_WITH",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "MeterValue"
-      },
-      "attributes": []
-    },
-    {
-      "label": "SUPPLIES_ENERGY_VIA",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "EnergySource"
-      },
-      "attributes": []
-    },
-    {
-      "label": "OPEN_DURING",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "OpeningTime"
-      },
-      "attributes": []
-    },
-    {
-      "label": "INCLUDES_CHARGING_MODE",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "ChargingMode"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_AUTHENTICATION_DATA",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "AuthenticationData"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HANDLES_ERRORS",
-      "source": {
-        "label": "ChargePointOperator"
-      },
-      "target": {
-        "label": "Error"
-      },
-      "attributes": []
-    },
-    {
-      "label": "TRANSMITS_NOTIFICATIONS",
-      "source": {
-        "label": "ChargePointOperator"
-      },
-      "target": {
-        "label": "ChargingNotification"
-      },
-      "attributes": []
-    },
-    {
-      "label": "IN",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "Location"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_ACCESSIBILITY",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "Accessibility"
-      },
-      "attributes": []
-    },
-    {
-      "label": "ACCEPTS",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "PaymentOption"
-      },
-      "attributes": []
-    },
-    {
-      "label": "COMMUNICATES",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "CommunicationParadigm"
-      },
-      "attributes": []
-    },
-    {
-      "label": "PARTICIPATES_IN",
-      "source": {
-        "label": "Service"
-      },
-      "target": {
-        "label": "Release"
-      },
-      "attributes": []
-    },
-    {
-      "label": "OPERATES_VIA",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "Interface"
-      },
-      "attributes": []
-    },
-    {
-      "label": "FOLLOWS_PROTOCOL",
-      "source": {
-        "label": "Interface"
-      },
-      "target": {
-        "label": "Protocol"
-      },
-      "attributes": []
-    },
-    {
-      "label": "ACCESSED_THROUGH",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "Endpoint"
-      },
-      "attributes": []
-    },
-    {
-      "label": "PUSHED_WITH",
-      "source": {
-        "label": "Evse"
-      },
-      "target": {
-        "label": "ActionType"
-      },
-      "attributes": []
-    },
-    {
-      "label": "AUTHENTICATED_WITH",
-      "source": {
-        "label": "Evse"
-      },
-      "target": {
-        "label": "AuthenticationData"
-      },
-      "attributes": []
-    },
-    {
-      "label": "SIGNATURE_HAS_STATUS",
-      "source": {
-        "label": "MeteringSignature"
-      },
-      "target": {
-        "label": "StatusCode"
-      },
-      "attributes": []
-    },
-    {
-      "label": "DEFINES_OPERATIONS_FOR",
-      "source": {
-        "label": "OpenInterChargeProtocol"
-      },
-      "target": {
-        "label": "ElectricMobilityProvider"
-      },
-      "attributes": []
-    },
-    {
-      "label": "USED_BY",
-      "source": {
-        "label": "ElectricMobilityProvider"
-      },
-      "target": {
-        "label": "ClientCertificate"
-      },
-      "attributes": []
-    },
-    {
-      "label": "SENDS_TO",
-      "source": {
-        "label": "ElectricMobilityProvider"
-      },
-      "target": {
-        "label": "ClientCertificate"
-      },
-      "attributes": []
-    },
-    {
-      "label": "SUPPORTED_BY",
-      "source": {
-        "label": "TechnicalStandard"
-      },
-      "target": {
-        "label": "Interface"
-      },
-      "attributes": []
-    },
-    {
-      "label": "EMPLOYS_ON",
-      "source": {
-        "label": "HubjectPlatform"
-      },
-      "target": {
-        "label": "Network"
-      },
-      "attributes": []
-    },
-    {
-      "label": "FOLLOWS",
-      "source": {
-        "label": "Service"
-      },
-      "target": {
-        "label": "TechnicalStandard"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_VERSION",
-      "source": {
-        "label": "Software"
-      },
-      "target": {
-        "label": "Version"
-      },
-      "attributes": []
-    },
-    {
-      "label": "DEPLOYS_VERSION",
-      "source": {
-        "label": "ElectricMobilityProvider"
-      },
-      "target": {
-        "label": "Version"
-      },
-      "attributes": []
-    },
-    {
-      "label": "INTERACTS_WITH",
-      "source": {
-        "label": "ElectricMobilityProvider"
-      },
-      "target": {
-        "label": "HubjectPlatform"
-      },
-      "attributes": []
-    },
-    {
-      "label": "SUPPORTS_PLUGS",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "Plug"
-      },
-      "attributes": []
-    },
-    {
-      "label": "SERVES_THROUGH",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "AuthenticationMode"
-      },
-      "attributes": []
-    },
-    {
-      "label": "INFLUENCES",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "EnvironmentalImpact"
-      },
-      "attributes": []
-    },
-    {
-      "label": "ACCESSIBLE_VIA",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "Accessibility"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_PAYMENT_OPTION",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "PaymentOption"
-      },
-      "attributes": []
-    },
-    {
-      "label": "OFFERS_SERVICE",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "ValueAddedService"
-      },
-      "attributes": []
-    },
-    {
-      "label": "TRANSACTS_VIA",
-      "source": {
-        "label": "ChargePointOperator"
-      },
-      "target": {
-        "label": "Protocol"
-      },
-      "attributes": []
-    },
-    {
-      "label": "VALIDATES_FORMAT",
-      "source": {
-        "label": "Timezone"
-      },
-      "target": {
-        "label": "TimeFormat"
-      },
-      "attributes": []
-    },
-    {
-      "label": "USES_ENERGY_SOURCE",
-      "source": {
-        "label": "ChargingStation"
-      },
-      "target": {
-        "label": "EnergySource"
-      },
-      "attributes": []
-    },
-    {
-      "label": "STARTS_VIA",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "OperatorID"
-      },
-      "attributes": []
-    },
-    {
-      "label": "START_REMOTELY_VIA",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "ProviderID"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CONNECTS_THROUGH",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "Network"
-      },
-      "attributes": []
-    },
-    {
-      "label": "STORES",
-      "source": {
-        "label": "HubjectPlatform"
-      },
-      "target": {
-        "label": "ChargingSession"
-      },
-      "attributes": []
-    },
-    {
-      "label": "NEEDS",
-      "source": {
-        "label": "ElectricMobilityProvider"
-      },
-      "target": {
-        "label": "EvseID"
-      },
-      "attributes": []
-    },
-    {
-      "label": "INITIATED_BY",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "EvseID"
-      },
-      "attributes": []
-    },
-    {
-      "label": "HAS_STARTED",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "ChargingStart"
-      },
-      "attributes": []
-    },
-    {
-      "label": "ENDED_AT",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "ChargingEnd"
-      },
-      "attributes": []
-    },
-    {
-      "label": "STARTS_AT",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "SessionStart"
-      },
-      "attributes": []
-    },
-    {
-      "label": "ENDS_AT",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "SessionEnd"
-      },
-      "attributes": []
-    },
-    {
-      "label": "STARTS_WITH",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "MeterValueStart"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CONSUMES",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "ConsumedEnergy"
-      },
-      "attributes": []
-    },
-    {
-      "label": "STARTS_AFTER",
-      "source": {
-        "label": "ChargingSession"
-      },
-      "target": {
-        "label": "PenaltyTimeStart"
-      },
-      "attributes": []
-    },
-    {
-      "label": "PROVIDES_NOTIFICATIONS",
-      "source": {
-        "label": "ChargePointOperator"
-      },
-      "target": {
-        "label": "ChargingNotificationType"
-      },
-      "attributes": []
-    },
-    {
-      "label": "STORES_DATA",
-      "source": {
-        "label": "HubjectPlatform"
-      },
-      "target": {
-        "label": "EvseDataRecord"
-      },
-      "attributes": []
-    },
-    {
-      "label": "VERIFIES_WITH",
-      "source": {
-        "label": "TransparencySoftware"
-      },
-      "target": {
-        "label": "SignedMeteringValuesVerificationInstruction"
-      },
-      "attributes": []
-    },
-    {
-      "label": "CREATES_VIA",
-      "source": {
-        "label": "AuthenticationData"
-      },
-      "target": {
-        "label": "HashFunction"
-      },
-      "attributes": []
-    },
-    {
-      "label": "SUBSCRIBES_TO",
-      "source": {
-        "label": "ElectricMobilityProvider"
-      },
-      "target": {
-        "label": "Service"
-      },
-      "attributes": []
-    },
-    {
-      "label": "SUBSCRIBED_BY",
-      "source": {
-        "label": "ChargePointOperator"
-      },
-      "target": {
-        "label": "Service"
-      },
-      "attributes": []
-    },
-    {
-      "label": "INITIATES",
-      "source": {
-        "label": "ElectricMobilityProvider"
-      },
-      "target": {
-        "label": "ChargingSession"
-      },
-      "attributes": []
-    },
-    {
-      "label": "INFORMS",
-      "source": {
-        "label": "ChargePointOperator"
-      },
-      "target": {
-        "label": "ElectricMobilityProvider"
-      },
-      "attributes": []
-    },
-    {
-      "label": "NOTIFIED_OF",
-      "source": {
-        "label": "ElectricMobilityProvider"
-      },
-      "target": {
-        "label": "ChargingNotification"
-      },
-      "attributes": []
-    },
-    {
-      "label": "UTILIZES",
+      "label": "REQUIRES_AUTHENTICATION",
       "source": {
         "label": "ChargingSession"
       },
@@ -5022,22 +1773,232 @@
       "attributes": []
     },
     {
-      "label": "PROVIDES_WITH",
+      "label": "HAS_STATUS_CODE",
       "source": {
-        "label": "MeterValue"
+        "label": "Service"
       },
       "target": {
-        "label": "MeterValueStart"
+        "label": "StatusCode"
       },
       "attributes": []
     },
     {
-      "label": "UPDATES_WITH",
+      "label": "SCHEDULED_AT",
+      "source": {
+        "label": "ChargingStation"
+      },
+      "target": {
+        "label": "OpeningTime"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_VERSION",
+      "source": {
+        "label": "Service"
+      },
+      "target": {
+        "label": "ServiceVersion"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_GEO_COORDINATES",
       "source": {
         "label": "EvseDataRecord"
       },
       "target": {
-        "label": "deltaType"
+        "label": "GeoCoordinates"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_ADDRESS",
+      "source": {
+        "label": "EvseDataRecord"
+      },
+      "target": {
+        "label": "Address"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_OPERATOR",
+      "source": {
+        "label": "ChargingStation"
+      },
+      "target": {
+        "label": "Operator"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_CHARGING_MODE",
+      "source": {
+        "label": "ChargingStation"
+      },
+      "target": {
+        "label": "ChargingMode"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_SERVICE",
+      "source": {
+        "label": "ChargePointOperator"
+      },
+      "target": {
+        "label": "Service"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_TIMEZONE",
+      "source": {
+        "label": "ChargePointOperator"
+      },
+      "target": {
+        "label": "Timezone"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_CONTRACT",
+      "source": {
+        "label": "ElectricMobilityProvider"
+      },
+      "target": {
+        "label": "Contract"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_PRICING_PRODUCT",
+      "source": {
+        "label": "ElectricMobilityProvider"
+      },
+      "target": {
+        "label": "PricingProduct"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PROVIDES",
+      "source": {
+        "label": "ChargePointOperator"
+      },
+      "target": {
+        "label": "ChargingStation"
+      },
+      "attributes": []
+    },
+    {
+      "label": "STARTS",
+      "source": {
+        "label": "ChargingSession"
+      },
+      "target": {
+        "label": "EroamingAuthorizationStart"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ENDS",
+      "source": {
+        "label": "ChargingSession"
+      },
+      "target": {
+        "label": "EroamingAuthorizationStop"
+      },
+      "attributes": []
+    },
+    {
+      "label": "REPORTS_ERROR",
+      "source": {
+        "label": "ChargingSession"
+      },
+      "target": {
+        "label": "ChargingNotificationError"
+      },
+      "attributes": []
+    },
+    {
+      "label": "REPORTS_PROGRESS",
+      "source": {
+        "label": "ChargingSession"
+      },
+      "target": {
+        "label": "ChargingNotificationProgress"
+      },
+      "attributes": []
+    },
+    {
+      "label": "REPORTS_END",
+      "source": {
+        "label": "ChargingSession"
+      },
+      "target": {
+        "label": "ChargingNotificationEnd"
+      },
+      "attributes": []
+    },
+    {
+      "label": "VERIFIES",
+      "source": {
+        "label": "MeteringValue"
+      },
+      "target": {
+        "label": "MeteringSignature"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_PARTNER",
+      "source": {
+        "label": "HubjectPlatform"
+      },
+      "target": {
+        "label": "Partner"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_EVSE_DATA",
+      "source": {
+        "label": "ChargingStation"
+      },
+      "target": {
+        "label": "EvseData"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_ACCESSIBILITY",
+      "source": {
+        "label": "EvseData"
+      },
+      "target": {
+        "label": "Accessibility"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_SERVICE_VERSION",
+      "source": {
+        "label": "Service"
+      },
+      "target": {
+        "label": "ServiceVersion"
+      },
+      "attributes": []
+    },
+    {
+      "label": "BELONGS_TO",
+      "source": {
+        "label": "PricingProduct"
+      },
+      "target": {
+        "label": "Provider"
       },
       "attributes": []
     }

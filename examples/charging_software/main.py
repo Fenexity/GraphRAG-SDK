@@ -12,7 +12,7 @@ from graphrag_sdk import KnowledgeGraph, Ontology
 
 logging.basicConfig(level=logging.INFO)
 
-folder = "otelzap"  # "everest-core"
+folder = "EVerest-main"  # "everest-core"
 path_in = "examples/charging_software/03_data_in/code_repos"
 # path_in = "examples/charging_software/03_data_in/code_repos"
 
@@ -69,24 +69,24 @@ if __name__ == "__main__":
     # with open(os.path.join(ontologies_dir, fname_onto), "r") as f:
     #     ontology = Ontology.from_json(json.loads(f.read()))
     
-    # Build knowledge graph with unified config
-    kg = KnowledgeGraph(
-        name=folder,
-        model_config=KnowledgeGraphModelConfig.with_model(model),
-        ontology=ontology,
-        host="localhost",
-        port=6379
-    )
+    # # Build knowledge graph with unified config
+    # kg = KnowledgeGraph(
+    #     name=folder,
+    #     model_config=KnowledgeGraphModelConfig.with_model(model),
+    #     ontology=ontology,
+    #     host="localhost",
+    #     port=6379
+    # )
     
     # # kg.process_sources(sources)  # Only if directly from sources to kg.
 
     ########### INTERACT WITH KNOWLEDGE GRAPH, SAVE IT AS .rdb file ###########
 
-    # Add chat interface from quickstart
-    def query_kg(question: str):
-        chat = kg.chat_session()
-        return chat.send_message(question)
+    # # Add chat interface from quickstart
+    # def query_kg(question: str):
+    #     chat = kg.chat_session()
+    #     return chat.send_message(question)
     
-    print(query_kg("Explain key EV charging concepts in this knowledge base"))
+    # print(query_kg("Explain key EV charging concepts in this knowledge base"))
 
     logging.info("This is the end.")
